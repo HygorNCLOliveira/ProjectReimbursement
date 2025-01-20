@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="576e6950839392101b49bfc6feaad311" extends="task" label="Reimbursement" max_length="40" name="x_1564426_reimbu_0_reimbursement" type="collection">
+        <element label="Amount USD" max_length="20" name="amount_usd" type="currency"/>
+        <element label="Expense date" max_length="40" name="expense_date" type="glide_date_time"/>
+        <element label="Amount BRL" max_length="20" name="amount_brl" type="currency"/>
+        <element label="Category" max_length="32" name="category" reference="x_1564426_reimbu_0_category" type="reference"/>
+        <element choice="1" default="javascript:gs.getUserID();" dynamic_default_value="bdcb83a85f220100a9ad2572f2b4773d" label="Requester" max_length="32" name="requester" reference="sys_user" type="reference" use_dynamic_default="true">
+            <choice/>
+        </element>
+        <element label="Rejection Reason" max_length="4000" name="rejection_reason" type="string"/>
+    </element>
+</database>

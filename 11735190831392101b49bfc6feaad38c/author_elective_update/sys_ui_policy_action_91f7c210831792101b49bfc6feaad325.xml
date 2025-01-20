@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>expense_date</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:35:24</sys_created_on>
+        <sys_id>91f7c210831792101b49bfc6feaad325</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>expense_date</sys_name>
+        <sys_package display_value="Reimbursement" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name>sys_ui_policy_action_91f7c210831792101b49bfc6feaad325</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:35:24</sys_updated_on>
+        <table>x_1564426_reimbu_0_reimbursement</table>
+        <ui_policy display_value=" Mandatory fields">ad878a10831792101b49bfc6feaad337</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=91f7c210831792101b49bfc6feaad325"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Reimbursement">11735190831392101b49bfc6feaad38c</application>
+        <file_path/>
+        <instance_id>6b366160fb82d6d01feef633beefdce8</instance_id>
+        <instance_name>dev290447</instance_name>
+        <name>sys_ui_policy_action_91f7c210831792101b49bfc6feaad325</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>expense_date</field><field_message/><field_message_type>none</field_message_type><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-20 18:35:24</sys_created_on><sys_id>91f7c210831792101b49bfc6feaad325</sys_id><sys_mod_count>0</sys_mod_count><sys_name>expense_date</sys_name><sys_package display_value="Reimbursement" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package><sys_policy/><sys_scope display_value="Reimbursement">11735190831392101b49bfc6feaad38c</sys_scope><sys_update_name>sys_ui_policy_action_91f7c210831792101b49bfc6feaad325</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-20 18:35:24</sys_updated_on><table>x_1564426_reimbu_0_reimbursement</table><ui_policy display_value=" Mandatory fields">ad878a10831792101b49bfc6feaad337</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=91f7c210831792101b49bfc6feaad325"/></record_update>]]></payload>
+        <payload_hash>-803689097</payload_hash>
+        <record_name>expense_date</record_name>
+        <reverted_from/>
+        <source>2f482598835392101b49bfc6feaad3e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:35:24</sys_created_on>
+        <sys_id>69f7c250831792101b49bfc6feaad387</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19484ff7e4e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:35:24</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>6df7c250061792100768ea3eb0baf986</update_guid>
+        <update_guid_history>6df7c250061792100768ea3eb0baf986:-803689097</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 18:37:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>0774568d7507433fb39424a0e96eb9b1</sys_id>
+        <sys_metadata>91f7c210831792101b49bfc6feaad325</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>expense_date</sys_name>
+        <sys_package display_value="Reimbursement" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_scope_delete display_value="">0d09655868c24840ac0ecd0f56928400</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_91f7c210831792101b49bfc6feaad325</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_91f7c210831792101b49bfc6feaad325">69f7c250831792101b49bfc6feaad387</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 18:37:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

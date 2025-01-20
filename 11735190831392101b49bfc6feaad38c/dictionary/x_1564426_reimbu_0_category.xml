@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a05b6d5c835392101b49bfc6feaad311" label="Category" max_length="40" name="x_1564426_reimbu_0_category" type="collection">
+        <element display="true" label="Category Name" max_length="250" name="category_name" type="string"/>
+        <element label="Departament" max_length="32" name="departament" reference="sys_user_group" type="reference"/>
+        <index name="index">
+            <element name="departament"/>
+        </index>
+    </element>
+</database>
