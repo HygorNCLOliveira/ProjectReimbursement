@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description>Human resources resolver</description>
+        <elevated_privilege>false</elevated_privilege>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_1564426_reimbu_0.resolver</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>resolver</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-20 14:46:01</sys_created_on>
+        <sys_id>15735190831392101b49bfc6feaad3bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1564426_reimbu_0.resolver</sys_name>
+        <sys_package display_value="Reimbursement" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name>sys_user_role_15735190831392101b49bfc6feaad3bb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-20 14:46:01</sys_updated_on>
+    </sys_user_role>
+</record_update>
