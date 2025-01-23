@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_role_contains">
+    <sys_user_role_contains action="INSERT_OR_UPDATE">
+        <contains display_value="approver_user" name="approver_user">debab85bff02110053ccffffffffffb6</contains>
+        <role display_value="x_1564426_reimbu_0.manager_rh" name="x_1564426_reimbu_0.manager_rh">70809328831fd2101b49bfc6feaad376</role>
+        <sys_class_name>sys_user_role_contains</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-21 20:09:26</sys_created_on>
+        <sys_id>701727e0839fd2101b49bfc6feaad354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>approver_user.x_1564426_reimbu_0.manager_rh</sys_name>
+        <sys_package display_value="Reimbursement" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name>sys_user_role_contains_701727e0839fd2101b49bfc6feaad354</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-21 20:09:26</sys_updated_on>
+    </sys_user_role_contains>
+</record_update>
