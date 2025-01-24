@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>rejection_reason</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 13:05:00</sys_created_on>
+        <sys_id>3cb2ed65835312101b49bfc6feaad3f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>rejection_reason</sys_name>
+        <sys_package display_value="Reimbursement - Hygor Oliveira" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name>sys_ui_policy_action_3cb2ed65835312101b49bfc6feaad3f5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 13:05:00</sys_updated_on>
+        <table>x_1564426_reimbu_0_reimbursement</table>
+        <ui_policy display_value="Leave fields read-only">1e70e1e1835312101b49bfc6feaad336</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=3cb2ed65835312101b49bfc6feaad3f5"/>
+</record_update>

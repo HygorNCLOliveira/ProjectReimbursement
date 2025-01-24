@@ -8,5 +8,13 @@
             <choice/>
         </element>
         <element label="Rejection Reason" max_length="4000" name="rejection_reason" type="string"/>
+        <element choice="1" default="1" label="Integration State" max_length="250" name="integration_state" read_only="true" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Starting" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Integration Success" sequence="400" value="3"/>
+                <element inactive_on_update="false" label="Integration Failure" sequence="300" value="4"/>
+                <element inactive_on_update="false" label="Integrating" sequence="200" value="2"/>
+            </choice>
+        </element>
     </element>
 </database>

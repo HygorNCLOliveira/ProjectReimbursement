@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>closed_by</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 13:02:30</sys_created_on>
+        <sys_id>4022a925835312101b49bfc6feaad314</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>closed_by</sys_name>
+        <sys_package display_value="Reimbursement - Hygor Oliveira" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name>sys_ui_policy_action_4022a925835312101b49bfc6feaad314</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 13:02:30</sys_updated_on>
+        <table>x_1564426_reimbu_0_reimbursement</table>
+        <ui_policy display_value="Leave fields read-only">1e70e1e1835312101b49bfc6feaad336</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="DELETE" query="documentkey=4022a925835312101b49bfc6feaad314"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</application>
+        <file_path/>
+        <instance_id>6b366160fb82d6d01feef633beefdce8</instance_id>
+        <instance_name>dev290447</instance_name>
+        <name>sys_ui_policy_action_4022a925835312101b49bfc6feaad314</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>true</disabled><field>closed_by</field><field_message/><field_message_type>none</field_message_type><mandatory>ignore</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-01-24 13:02:30</sys_created_on><sys_id>4022a925835312101b49bfc6feaad314</sys_id><sys_mod_count>0</sys_mod_count><sys_name>closed_by</sys_name><sys_package display_value="Reimbursement - Hygor Oliveira" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package><sys_policy/><sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope><sys_update_name>sys_ui_policy_action_4022a925835312101b49bfc6feaad314</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-01-24 13:02:30</sys_updated_on><table>x_1564426_reimbu_0_reimbursement</table><ui_policy display_value="Leave fields read-only">1e70e1e1835312101b49bfc6feaad336</ui_policy><value/><value_action>ignore</value_action><visible>ignore</visible></sys_ui_policy_action><sys_translated_text action="delete_multiple" query="documentkey=4022a925835312101b49bfc6feaad314"/></record_update>]]></payload>
+        <payload_hash>-124044521</payload_hash>
+        <record_name>closed_by</record_name>
+        <reverted_from/>
+        <source>2f482598835392101b49bfc6feaad3e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 13:02:30</sys_created_on>
+        <sys_id>0c22a565835312101b49bfc6feaad3dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>194986826db0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 13:02:30</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>0022a565375312100730b3b9e2f315dd</update_guid>
+        <update_guid_history>0022a565375312100730b3b9e2f315dd:-124044521</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 13:09:23</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>461b0722cb0f4d10b483cbd783b8f441</sys_id>
+        <sys_metadata>4022a925835312101b49bfc6feaad314</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>closed_by</sys_name>
+        <sys_package display_value="Reimbursement - Hygor Oliveira" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package>
+        <sys_parent display_value="Leave fields read-only">1e70e1e1835312101b49bfc6feaad336</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_scope_delete display_value="">0d09655868c24840ac0ecd0f56928400</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_4022a925835312101b49bfc6feaad314</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_4022a925835312101b49bfc6feaad314">0c22a565835312101b49bfc6feaad3dd</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 13:09:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

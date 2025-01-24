@@ -1,0 +1,2618 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=20871000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>amount_integration</internal_name>
+        <label_cache>[{"name":"d8c03ab5-c874-48d1-8ad4-1f5ce0d97a0b.duration","label":"10 - Seconds to Duration➛Duration","reference_display":"Duration","type":"glide_duration","base_type":"glide_duration","usedInstances":{"067977c2-66e7-42a1-a731-835cad03a353":["timer_duration"]},"attributes":{"uiType":"glide_duration","uiTypeLabel":"Duration","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"efc1399c-cef9-4794-bb24-0dec31205815"}},{"name":"flow_variable.retry_timeout","label":"Flow Variables➛Retry Timeout","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"d8c03ab5-c874-48d1-8ad4-1f5ce0d97a0b":["seconds"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"57c56a16-b809-4585-92d4-e0f5e88bc87a"}},{"name":"flow_variable.amount_usd","label":"Flow Variables➛Amount USD","type":"string","base_type":"string","usedInstances":{"ba268d83-7506-49a3-85c2-b67385f198aa":["currencies"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"3d0f7dfc-9c3f-4b6f-a498-ba8c24d6673f"}},{"name":"flow_variable.amount_brl","label":"Flow Variables➛Amount BRL","type":"string","base_type":"string","usedInstances":{"ba268d83-7506-49a3-85c2-b67385f198aa":["base_currency"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"8d17091c-a1c8-4398-af96-9a6100f79e5e"}},{"name":"flow_variable.current_try","label":"Flow Variables➛Current Try","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"9a26d1d1-4899-4717-bd28-51226f201b89":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"a4221a06-26d9-4483-88bf-3cabbd977305"}},{"name":"flow_variable.retry_count","label":"Flow Variables➛Retry Count","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"9a26d1d1-4899-4717-bd28-51226f201b89":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1a99aee0-0837-46dd-81f5-648a1debe9ed"}},{"name":"flow_variable.integration_successful1","label":"Flow Variables➛Integration Successful","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","usedInstances":{"9a26d1d1-4899-4717-bd28-51226f201b89":["condition"],"01028676-5a35-443c-9710-1be319db0516":["condition"]},"attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a0ce0006-818f-49c5-b34d-323ce8abb77b"}},{"name":"flow_variable.active","label":"Flow Variables➛Active","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"5d5d7571-6c3c-4a93-b3c1-176cea4f84f3":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"e92542f6-dcbd-4b3a-bafc-ab1cb8ca0253"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Reimbursement Record","reference":"x_1564426_reimbu_0_reimbursement","reference_display":"Reimbursement","type":"reference","base_type":"reference","usedInstances":{"120c850e-86ca-4924-a5cf-4767601aa6f3":["record"],"35860cbd-6faa-4fb3-8758-485b3bd73efd":["record"],"d598a6d3-8b50-4a36-9255-41553dbc7565":["record"],"39ce1673-01e7-495c-9bb7-b460a0401fda":["record"],"70780a93-dae9-4721-a58a-7651c06c9d8a":["record"]},"attributes":{}},{"name":"Created_1.current.amount_brl","label":"Trigger - Record Created➛Reimbursement Record➛Amount BRL","reference":"","reference_display":"Amount BRL","type":"currency","base_type":"currency","parent_table_name":"x_1564426_reimbu_0_reimbursement","column_name":"amount_brl","usedInstances":{}},{"name":"Created_1.current.amount_usd","label":"Trigger - Record Created➛Reimbursement Record➛Amount USD","reference":"","reference_display":"Amount USD","type":"currency","base_type":"currency","parent_table_name":"x_1564426_reimbu_0_reimbursement","column_name":"amount_usd","usedInstances":{}},{"name":"35860cbd-6faa-4fb3-8758-485b3bd73efd.__action_status__.code","label":"4 - Update Record➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"effd183c-03af-4f9e-9035-469eb5258ad1":["condition"]},"attributes":{}}]</label_cache>
+        <master_snapshot>9029fd6183d312101b49bfc6feaad331</master_snapshot>
+        <master_snapshot_digest/>
+        <name>amount integration</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>fc29fd6183d312101b49bfc6feaad39a</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:00:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>766f6565839312101b49bfc6feaad399</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>amount integration</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Reimbursement - Hygor Oliveira" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name>sys_hub_flow_766f6565839312101b49bfc6feaad399</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:30</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=766f6565839312101b49bfc6feaad399"/>
+    <sys_variable_value action="delete_multiple" query="document_key=766f6565839312101b49bfc6feaad399"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1564426_reimbu_0_reimbursement">state=8<item display_value="Awaiting Manager Approval" endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="8"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:43:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fc29fd6183d312101b49bfc6feaad39a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:43:02</sys_updated_on>
+        <table>x_1564426_reimbu_0_reimbursement</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>766f6565839312101b49bfc6feaad399</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:48:30</sys_created_on>
+        <sys_id>5b0ff62d831b12101b49bfc6feaad39f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:30</sys_updated_on>
+        <trigger display_value="">fc29fd6183d312101b49bfc6feaad39a</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=766f6565839312101b49bfc6feaad399^sys_idNOT IN5b0ff62d831b12101b49bfc6feaad39f"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=766f6565839312101b49bfc6feaad399"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=766f6565839312101b49bfc6feaad399^sys_idNOT IN4f6f6565839312101b49bfc6feaad39c"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>766f6565839312101b49bfc6feaad399</id>
+        <name>amount integration</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:00:35</sys_created_on>
+        <sys_id>4f6f6565839312101b49bfc6feaad39c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:00:35</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=4f6f6565839312101b49bfc6feaad39c"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=766f6565839312101b49bfc6feaad399^sys_idNOT IN54f2f1a9839312101b49bfc6feaad381,dcf2f1a9839312101b49bfc6feaad37b"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="amount integration">766f6565839312101b49bfc6feaad399</model>
+        <model_id>766f6565839312101b49bfc6feaad399</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_766f6565839312101b49bfc6feaad399</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:15:58</sys_created_on>
+        <sys_id>54f2f1a9839312101b49bfc6feaad381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:15:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=54f2f1a9839312101b49bfc6feaad381"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="amount integration">766f6565839312101b49bfc6feaad399</model>
+        <model_id>766f6565839312101b49bfc6feaad399</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_766f6565839312101b49bfc6feaad399</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:15:58</sys_created_on>
+        <sys_id>dcf2f1a9839312101b49bfc6feaad37b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:15:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dcf2f1a9839312101b49bfc6feaad37b"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=766f6565839312101b49bfc6feaad399"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=766f6565839312101b49bfc6feaad399"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=766f6565839312101b49bfc6feaad399^sys_idNOT IN1cf275a9839312101b49bfc6feaad364"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="amount integration">766f6565839312101b49bfc6feaad399</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:15:58</sys_created_on>
+        <sys_id>1cf275a9839312101b49bfc6feaad364</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:42:55</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+VaXW/bNhT9K4KeNiAD9GFbVt66JMUCdM3gpNtDFhCUdGkLkylPopS4Rf77Li1KlmUple10tdOXoialy3sOzz2XInL/RY+oB5F+rt9RLwL9TA+5gITT6G65ABwWcphwOpdzc8oDKuJkqZ+LJIMzPU4CSPRz80zPaZTB7TK9DvAlfHT1hnpdV9P4+4mYw9FgYI1IAuHcy4ih/pOkMAcu8NEgTBcRXf6p3pg0phc0wdBCLvtF92dhFCTA9fP7B0xdru0zn7oWGL5t2pZlGNZ4YHoj2zOtwKZgGBiiCbmRq2hBvgYKTwJ4ALgUo1EKLaQkQIMbHi2rJ2bIacHKnD6l4WeMPjbkcwwwdx+KueonUQwUw/4sDn24WYgw5sVIkWcxGUfZnH8s8pfcAaNZJErucCRLMR4sZMoyCZURu53Fj5NywfchX6FTk1Hs06j6RYVIQi8TkErCWRgh9aTgJo2zZJX95OriZnJJ/np3d/Hb1YRMrm7vJtcXd1eX+vMKF/k3kxGLDFUupIDzXG34+xAiuYE8m3uYzZme+km4EO98Eeag0nk+Wws2yTjGINV+bEm3YK6i8EOYIgH3iKGkZxUS59kHFXKScS3GncN/ND9LkByhlapg13M6VaSyP0oRrkhR+slpQsicpMuUzDKPIG3TKXIV8kUmiOOOXXNEO2Tp+BvUrKoFQ9/r+sOz3C2IwBc1zbFPaf3X72GahnxaI6nCKCW5DbFCh9rVSgYLqOlpYX3YKED1UFmthtFpTNvqyRuqaPhQD+sxTcY8YJbhSNSmYXvMNBxjSFlgG4Zv1axne/nOvERDzXVwL5mRGunjRoMd3Shd1VHUo2qapJbJ1wu5lyTzTT2rOJbcf2V6F0eYWsO87Z3cuxJiMXzZ6IsvQHtl06dBTvGNoMTYx9R7mPfjDDhJQQhZzru7N8cyWb1Di0VqJif1rkmCWJxoH2P+y/X6Oe0W0EAwz5Oyubql9wGNwRLtTaH2YjFrNjKJ9Fcc30Aqi7Rjz3+g3tYornyTxT16GwzGQ5fZvoOYsZuxAXjUHFhD6jojm7mN3tZYvjuxo+9uPb0k73Sltr7St1bz1pKvOkyjU+1TDg1hqND2V/rqj0vKQR29rL7Ohr5PsqfR7FkUP6IG9ujzHvX/mSZxxoMt+8eYWsi19RPaT4rbn0/L6euNDjUAL+PdfOJ0UB7Sz9b6KYuT8uVencxmpufCAAz8OLOxk3lD1/V8ajHmjBywzEYnWy/cms3R968ehZK3VVrX51CrCPM27e7wjfb9EzzI15UUW229mDt+k76IeRCKosM2LbqcSvU9K9ivBS+3IhVUwN+ZYdjBuEfZjkaUBtBlVB6rlW0dSksCogXVNylb4ztd8hbX0HuLax4HEF2uw+kbHUOy9Ui5SImICQ0CUuOxpxoLbNs3v3r/awNEnBx0dyBTARKzeo+9jDWc0HARLWSaQg2B5i01MQM0lAitBRfU5Oon9i1ZP2FsI6+O3m8ad2HFWzcIOLxCdlrADr4caJTQoccqCBw6HNpO+wWB2zxWtaXwlQyP/qi1s3/kbXb04qfxbnGbMVs/jmvy39RAz7uAN4z6mx0KW7I4/hPiZl1Gsqludd5pFAZQzr2CP6lI+dqHdncmNnb9oel0ONN42OlMavGXEhMtsP+Xs6RsQEo5bQ71qZg6rj8eeC1NPvwHC+1MprciAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=766f6565839312101b49bfc6feaad399^sys_idNOT IN069b7d2583d312101b49bfc6feaad3a2,144c3629831b12101b49bfc6feaad3b5,4d0f762d831b12101b49bfc6feaad35d,7ab036a983d712101b49bfc6feaad3d8,9c4c3629831b12101b49bfc6feaad3b0,d04c3629831b12101b49bfc6feaad3b6,dc4c3629831b12101b49bfc6feaad3b3"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="amount integration">766f6565839312101b49bfc6feaad399</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:53:46</sys_created_on>
+        <sys_id>069b7d2583d312101b49bfc6feaad3a2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:53:46</sys_updated_on>
+        <ui_id>35860cbd-6faa-4fb3-8758-485b3bd73efd</ui_id>
+        <values>H4sIAAAAAAAA/+1UTYvbMBD9K8FnY/yRhN3cSkOgh+5CWvayXYQsTRKBLLuylE0a8t87kuVsNtumYQmUQn2yRjNv3pt56HEXCR5NoiHwNLvNxqzIiiJP0/xmmJXjosxyXlCALIojRSvATA2s1hzPayqtC+x2HzVQA5xkCbNagzL7Pd5z0TaSbh9CGkbYSkiO99Hk8SmOGqoR0YCOJruTK7NtgEhagsTCac1shaCDT1PEuJRtXz3v6Z7Sdz3wzAM6ES6IV45PlsYRbAwoDthuQWULcVRRxamp9TaaGG0xgKr5vZLbQ8ZKKNMpreimFT8Qf5i6vAWgNBamcDiSMKF+OLVgcN8YUasuYmgp+8nV0lbqrpPgZgsLaqU5mq1tEQ8aR9mR6Bguvqzq53nfbyaUVxfYyppReThRY7QorYHWrQMk+KFUtGmEWpJG12vhi5FKlSwlHpKFrJ+xZyuWKqHM8U5wQDSZYXzqww9UCyfiM8Jg8d6LJ9+t69vJCISJ1+wFE78oTG2ZFo35gMBrCDT3cbBrOTpnAHb7su8jzBfLbkg2Gg+H+ZhoEFVpSRp+dOt1v3Xv/OT6fVb+6sgM7joylwp5VfwbYcHMr2LBy6OrefnmL3k5MPrHzPwnC6f52TfsaNPete2RfXE1sNTUkSStwaf3m03TgudvbXsm850OhgrxDQy6DvHFWnqAmQDJ21+I6y0cGpB1aHB4kq/m42yc+u//y3zFl/npJ0Dag9lKCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="amount integration">766f6565839312101b49bfc6feaad399</flow>
+        <generation_source/>
+        <order>15</order>
+        <parent_ui_id>01028676-5a35-443c-9710-1be319db0516</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:36:16</sys_created_on>
+        <sys_id>144c3629831b12101b49bfc6feaad3b5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:20</sys_updated_on>
+        <ui_id>39ce1673-01e7-495c-9bb7-b460a0401fda</ui_id>
+        <values>H4sIAAAAAAAA/+1UUWvbMBD+K0HPxtixE9q8jYXAHtZCNvrSFSFLl0Qgy54sp8lC/vtOspym6ZaFEhiD+ck63X33fXcfetwRKciE5CCS9DYd8yzNsmGSDG/ytBhnRToUGQNISUQ0KwEzDfDKCDyvmWpdYLf7aIBZEDSNeWsMaLvf472QTa3Y9iGkYYSvpBJ4TyaPTxGpmUFEC4ZMdidXdlsDVawAhYXTirclgg4+TRHjUrZ99byne0rf9cCzCOhUuiBeOT5pEhHYWNACsN2CqQYiUjItmK3MlkysaTGAqsW9VttDxkpq2ykt2aaRPxA/T1zeAlAaD1M4HGmYUD+cSnK4r62sdBexrFD95CrVlvquk+BmCwvWKns027ZBPKgdZUeiY7j4sqqe532/mdReXWCrKs7U4cSsNbJoLTRuHaDAD6VkdS31ktamWktfjFTKeKnwEC9U9Yw9G7nUMeOOd4wDYvEM41MffmBGOhGfEQaL9148/d66vp2MQJh6zV4w9YvC1IYbWdsPCLyGQHMfBbsWo3MG4Lcv+z7CfLHshqajcZ4Px9SALIuWJuHHNF73W/fOT67fZ+WvjszgriNzqZBXxb8RFsz8Kha8PLqal2/+kpcDo3/MzH+ycDI8+4Ydbdq7tjmyL64GloY5krSx+PR+a5MkE/lb257JfKeDoUR8C4OuQ3Sxlh5gJkGJ5hfieguHBnQdGhye5Kv5OB0n/vv/Ml/xZX76CfHu4ntKCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="amount integration">766f6565839312101b49bfc6feaad399</flow>
+        <generation_source/>
+        <order>17</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:48:20</sys_created_on>
+        <sys_id>4d0f762d831b12101b49bfc6feaad35d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:20</sys_updated_on>
+        <ui_id>70780a93-dae9-4721-a58a-7651c06c9d8a</ui_id>
+        <values>H4sIAAAAAAAA/+1UTYvbMBD9K8FnY+w4Cbu5lYZAD92FtOxluwhZGicCWXb1kU0a8t87suVsNtumYQmUQn2yRjNv3pt56HEXCR5NoxHwNLvNJizP8nyYpsObUVZM8iIb8pwCZFEcKVoBZmpgteZ4XlPpfGC3+6iBWuAkS5jTGpTd7/GeC9NIun0IaRhhKyE53kfTx6c4aqhGRAs6mu5Oruy2ASJpARILZzVzFYIOPs0Q41K2ffWip3tK3/fAMw/oRPggXnk+WRpHsLGgOGC7kkoDcVRRxamt9TaaWu0wgKr5vZLbQ8ZKKNsprejGiB+IP0p9XgkojYUpHI4kTKgfTi0Y3DdW1KqLWFrIfnK1dJW66yT42UJJnbRHs3UG8aDxlD2JjmH5ZVU/L/p+c6FadYGtrBmVhxO1VovCWTB+HSChHUpFm0aoJWl0vRZtMVKpkqXEQ1LK+hl7GrFUCWWed4IDoskc47M2/EC18CI+IwwW71vx5LvzfTsZgTBpNbeCSbsoTDVMi8Z+QOA1BJr7ONi1GJ8zALt92fcR5otlNyQbT0aj4YRoEFXhSBp+tGl1v3Xv4uT6fVb+6skM7joylwp5VfwbYcHMr2LBy+OrefnmL3k5MPrHzPwnC6fDs2/Y0aZb15oj++JqYKmpJ0mMxaf3m0vTnOdvbXsm850OhgrxLQy6DvHFWnqAuQDJzS/E9RYODcg6NDg8yVfzcTZJ2+//y3zFl/npJ2gtBLJKCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="integration freecurrency API">a1884229831712101b49bfc6feaad311</action_type>
+        <action_type_parent display_value="integration freecurrency API">06fbbda183d312101b49bfc6feaad37e</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="amount integration">766f6565839312101b49bfc6feaad399</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>9a26d1d1-4899-4717-bd28-51226f201b89</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 18:45:56</sys_created_on>
+        <sys_id>7ab036a983d712101b49bfc6feaad3d8</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:20</sys_updated_on>
+        <ui_id>ba268d83-7506-49a3-85c2-b67385f198aa</ui_id>
+        <values>H4sIAAAAAAAA/+1TTW/TQBD9K2jPseV17NjJDYoqIQGVKPRSVdZ4d9ystF6763XaEOW/MxvbKYooBMSBA8d98/HmvZ253TEl2Yohz/Mkjpf5nGc85hEvk2VZiUWFAHLOEzZjBmqkzBI6LERvLRqxJXgDuvf4blfp5rHYgFVQagyhbnrjitLq/Z7SpOpaDdub87LFWmlJDGx1ezdjLVjidmjZancSctsWCw0lamp67awy91R+rqSp8A1penXxrOkFqZ6M4G6iaaz0M/EZwyeHRiLRVqA7nLEajATX2C1bOdsTYBHkldHbY8ZaGUfNmM996tRX6pxHUeQzK/SMOESPz2K0cIDFulECr1qnGjMgzhs5Bhvd1+bjoMKbjxX02k3mE9KTMomtH9qPMc5UXa+bx08T4aUyB31jUDcC9PEFjlwoe4ed/5RefT7xZkDen/4MaqyJsaihbQkpWtts1IGFhq7De02P8LAaEjt1b0IQXmFIZkJ4SfjbA3wz7s0HakPFnu6LUQ89vvM/n2XzNMYsC+IoTYMEcRHkMF8EkIOMRBrH1RLZ/mBt8dB7UYNJox3F4CgldMKq1r2mETY4Kt/PxouB9KfrtXxeo3GDFFn1y3PpO/kb5zJl/41zOUPPVHjxvaAfiXzhUOL/h/JvHQrnyTwTwAMRZUmQxPMsABA8WORL5ImMIMX0jw/l7hsUxNKlXAYAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Seconds to Duration">c2763a61831b12101b49bfc6feaad39a</action_type>
+        <action_type_parent display_value="Seconds to Duration">aba57e2d83d712101b49bfc6feaad3d0</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="amount integration">766f6565839312101b49bfc6feaad399</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>effd183c-03af-4f9e-9035-469eb5258ad1</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:36:16</sys_created_on>
+        <sys_id>9c4c3629831b12101b49bfc6feaad3b0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:20</sys_updated_on>
+        <ui_id>d8c03ab5-c874-48d1-8ad4-1f5ce0d97a0b</ui_id>
+        <values>H4sIAAAAAAAA/41SwW7bMAz9F50dI64dL8ltwFCgwLYC69ZLURi0RCUCZMmVpbRekH8fZStG0V521OMj+d6jns5MCbZnvP5Sl1AX27Joi5tiXbTVrpW8lgggyp1gGTPQITEH5NaIgYAT6BCR81lq+9qcwCloNeYOvRsbrzq0wV8uxBRq6DWMj6mBEH5UWjg0bP/0nLEeHA336Nj+/KHkxx4bDS1qarwzHg/Eyv5b9LXzYVH9yUbcQIBaZlsnopIiY/jm0QikXRL0gBnrwAjw1o1s710gwCGIe6PHhXGkObPFDt4G9ZdGV+vIk0ieeLK/PJsUzTUVqzje915ZMyM+JpqKVofO/Jzlx1BRQtD+XahhoHnYR8lRRFIkH4729dd14a0yk7tU1JaDXl7gvVNt8DjEQwT1+2M0M/T90zlQY0c7mw76XplD0zt7UtMekt3lB02PfPolAgd1MDnw6DGnMCG/JfzbBD+mL/SDxqR9f4x6CXgXz30j201V1+vVegPtqtrycrWV292Kt1XJRb2tN1KwyxRu8xKirTmmFEgzZ0qEgTvV+68k4YTJ++X5H62+AuEKAwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="amount integration">766f6565839312101b49bfc6feaad399</flow>
+        <generation_source/>
+        <order>16</order>
+        <parent_ui_id>01028676-5a35-443c-9710-1be319db0516</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:36:16</sys_created_on>
+        <sys_id>d04c3629831b12101b49bfc6feaad3b6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:20</sys_updated_on>
+        <ui_id>404b1e55-97ab-41e0-b7ea-7adcaa39d576</ui_id>
+        <values>H4sIAAAAAAAA/9VUwW7bMAz9lUBnI3OaJWlzKzD4thbYhu7QdQYt0YkwWfJkOWlW9Gt22If0x0ZZdpIuaBoEBdoBvogUHx+fHn19x6RgU4aTIYyHw9FoOIjjIX1ZPhBng/gM+eh0MuIsYhoKpJsOqh+pg0whxRagah+UmkuB2lFIyKpUsLrazfC5VMKiZtPrm4iVYAnQoWXTu39SblViqiBDRQBffKvehW8eHcz1UfET3H2XJkbHVAd8Y4UnFEcMbx1qgdQvB1VhxArQApyxKzZ1tqaARRCXWq3WN+aSxpwy5u/eVvIXoZ/G/l6ONBrHkFsf01apEOZzIzlelk4aHSKBZ0gaVRf6IgzhNcYcauU6jSlSV4SHpafsSbSM8s9zs/zUNUykbqZrk8pwUOsTOGdlVjus/HtkQHgdAa8atUCFBYGnBZSl1LO0tGYhG0DiV/Rnig79XJklEankTPeB+2H6pBr0E4p/aMJXYKUH/kgwVHzfKJL+rD2XMFs7RRqEoAsVt7J05wS3wJbwfdQa92SvGcbZ5vFziUqkjWOrLesS2QaeqH6rqV4koObQ09Cj58SZhYc/D79NL7GIvLYkpFt950AZskIoqEzulmBx1/wvin3k+mBBjBz2AqfoYNU6gMTLFqqrJ8XsdqltFhKbfRrs36c2cshCjUdx/Eo7Fbb+6JV6nfXZ+uM9s0h5vs8Sk8nm7Zcg3dYCxbu+b5CPtywJ/S5pIQ7l1hV/DeQeU23tmRmjEPTGlycv5sv3/+mP/m391G/+AtxYAIiPCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="amount integration">766f6565839312101b49bfc6feaad399</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>9a26d1d1-4899-4717-bd28-51226f201b89</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:36:16</sys_created_on>
+        <sys_id>dc4c3629831b12101b49bfc6feaad3b3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:20</sys_updated_on>
+        <ui_id>d598a6d3-8b50-4a36-9255-41553dbc7565</ui_id>
+        <values>H4sIAAAAAAAA/+1UTYvbMBD9K8FnY+w4Cbu5lYZAD92FtOxluwhZGicCWXb1kU0a8t87suVsNtumYQmUQn2yRjNv3pt56HEXCR5NoxHwNLvNJizP8nyYpsObUVZM8iIb8pwCZFEcKVoBZmpgteZ4XlPpfGC3+6iBWuAkS5jTGpTd7/GeC9NIun0IaRhhKyE53kfTx6c4aqhGRAs6mu5Oruy2ASJpARILZzVzFYIOPs0Q41K2ffWip3tK3/fAMw/oRPggXnk+WRpHsLGgOGC7kkoDcVRRxamt9TaaWu0wgKr5vZLbQ8ZKKNsprejGiB+IP0p9XgkojYUpHI4kTKgfTi0Y3DdW1KqLWFrIfnK1dJW66yT42UJJnbRHs3UG8aDxlD2JjmH5ZVU/L/p+c6FadYGtrBmVhxO1VovCWTB+HSChHUpFm0aoJWl0vRZtMVKpkqXEQ1LK+hl7GrFUCWWed4IDoskc47M2/EC18CI+IwwW71vx5LvzfTsZgTBpNbeCSbsoTDVMi8Z+QOA1BJr7ONi1GJ8zALt92fcR5otlNyQbT0aj4YRoEFXhSBp+tGl1v3Xv4uT6fVb+6skM7joylwp5VfwbYcHMr2LBy+OrefnmL3k5MPrHzPwnC6fDs2/Y0aZb15oj++JqYKmpJ0mMxaf3m0vTnOdvbXsm850OhgrxLQy6DvHFWnqAuQDJzS/E9RYODcg6NDg8yVfzcTZJ2+//y3zFl/npJ2gtBLJKCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=766f6565839312101b49bfc6feaad399"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=766f6565839312101b49bfc6feaad399^sys_idNOT IN2405faed83d712101b49bfc6feaad3ea,5c4c3629831b12101b49bfc6feaad3b2,9b19bd6183d312101b49bfc6feaad393,9c4c3629831b12101b49bfc6feaad3b4,c29b7d2583d312101b49bfc6feaad3a0,c29b7d2583d312101b49bfc6feaad3a3,c69b7d2583d312101b49bfc6feaad3a1,cd0f762d831b12101b49bfc6feaad352,e005faed83d712101b49bfc6feaad3eb"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e405faed83d712101b49bfc6feaad3e9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="amount integration">766f6565839312101b49bfc6feaad399</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>9a26d1d1-4899-4717-bd28-51226f201b89</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:04:37</sys_created_on>
+        <sys_id>2405faed83d712101b49bfc6feaad3ea</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:26</sys_updated_on>
+        <ui_id>effd183c-03af-4f9e-9035-469eb5258ad1</ui_id>
+        <values>H4sIAAAAAAAA/+1UXW/TMBT9KyPPbZSPpuv6giZQpUnAJDbtBSbrxr5pLRw72E63UvW/c52kXcU6QGiPvNXnfp1zc0+3kWl903p3ay6dk0sdzb/cjyKpA0a/t5GGGqN5xI0W0kujWQeMojWoNgSutMelhRA6W4BUrcW3FBbSNQo2d7/P4iuphMVhagOWenu00Xz7S8hvGmQKSlTU7MZbqZdULgW9qgSq9IKnPM+meZYk2WySltO8TDORA0JOefvCd3sRZx86ZPSiujCPcLefZKwItNJkFOGjRy2QRlegHI6iGrQAb+zmgFgEca3VE7CS2lO7KCQ/OvmDemdFERIrJI0c++DhyYb19TBfGcnxugkEe8RDqYYablRb60+9jrB4rKBVfr94QlpH/bAJpAOLgVJ1szIPn/cDF1J3AoegMhzU4QWe1lC2Hl34MKiwpkashqah5bDGmrXsiolLHS8VPeJKmQcaGi4qBh6Ix7QjiBeEv+/gO7AyqPhIbai4p1mCk5x110ftvCUJu24t7HsbCPUCByms3wYlOG5l4y9pzhoH1rvR89M9utrtNi9m04SXYjytAMaTqszHs/NiNp7MijIvxXmOlYgZ68kz58G3jrGYG4G73ZuvbZLkInl+6K/X+DW8cQFFVaRJcdobk+kpb5xwxcuGyP5giPAJ/9IPSZL8N8SxIaRj/WEP2rrh/+yH+3D8/QTX341ALh0RuQ3Y1f4fPwQ2dACSH0MPxn4LEp6w3U8N18xNOwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">104c3629831b12101b49bfc6feaad3b2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="amount integration">766f6565839312101b49bfc6feaad399</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id>effd183c-03af-4f9e-9035-469eb5258ad1</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:36:16</sys_created_on>
+        <sys_id>5c4c3629831b12101b49bfc6feaad3b2</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:26</sys_updated_on>
+        <ui_id>067977c2-66e7-42a1-a731-835cad03a353</ui_id>
+        <values>H4sIAAAAAAAA/+1YS3PbOAz+KxqdHa+op+1bp2lneuh2p/Hk0uloKBKyOaUlLUUl9Xr835eUKFmxZefl9H1KBFDAB+IDBHhj55UsKlnO81dlyRaZPfv0eWSzTMvU/xs7wyuwZzatBJYsz2K5LsAe2TeYV1oOXwvOCJNxe0DpKCsLjtfX5sgbc8TqHSFLxqkA467AQnmRIOzZZk+l3cUcJ8CVpdfLnBHtnVH15E8jL5ggP/IcD3mOk4QIwtCPwiQNcTQJ1Ln2xUvj2Zo36I8EVf+ZKQTGTS6oxoQcZ6QClZBRUI5TzEsY2SucUSxzse4kAjD9kPGdYMkyqezZ+vDXkv2njPuOPpeCCpBAo+seY3NxjbhB0SShjWPoKk9lwgTgbEc7Gx+BK/UNDNkQRjdgA/Vt/AOCQCbxYtBK0WkH7LhblVUKKa64fH2+ENEZQnTPFKKnQ2zS96GoVTPb0/TCCTc5JzmvVtnfDQ3t7kKuT1VVc+Ty/uKqSoUKCk1XzT9DxvRqmd9+bLn2lmU1VqPkOcG8e8JSCpZUUqdmYwOHlTIUr3BRsGwRFyK/YfXLKozVeMHVwzjl+a1yqlvIGBMNZKyqA4/fKvllLb7GgukLeK/MqJe3NfHjfyvtt7kCgziuL0wfKIlghXxFdL4MOJ0iU729HEi2AhHXXStWbkE/97J12JOe3IIulfW/5o35ugslKaIhClESeaGrupDnk5BAOAVACE9dp9eFepSqAVs1YEsDtgziB4dmWlV9+bU8NooX6Fm1rcc0rY71jyL9z8JclfgybqhpYqudn4HRTa53yX8ZCr/LJCyaODSBJ47nec6UBF7UEZhSgDSNEuQCGiTwjqoDmA03WefnDyd/dk4OfAI3GzohjoeT4IJMIv/Cn1B0McHUv0BpQMCh0wg7ybh9c7s9pLBjXQHJM1o+vR3vcNVkhhT5ATk2EyYwMBPuU7kX6t0mezgvfMe58A+dn0PngyEwzpVbnbUewXEqayh7pG3F51hhKME+coIjdHXDHl3n9cQg9idbqwf84SEeWXS8H2bRaS95PxdDC00CaS7638pO0O0Gp1eOe5yhRzlznz38d7wbHPhb7V4dS1H9iGXcIiTr+NQC1jtmqLkj3X01f3eJf3ID+MZrA0rdgB6t/Mg7UfmH68IDYrpvX/B/gW/ZM2tg+JMz+u1qoyRLoBV/oUroMtNWQpoEgRrajlRC6N4d2VQCLLkEK825uln91IN7LAxzb6Ln2tA+OCPtPfcu7ckq64MYKoGrnfp3GOueOr591kxsLJUNpSgQViqHcy171/5arRVrRQJG+qLbXHzRUHey7f+1jjfg9xYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1f19bd6183d312101b49bfc6feaad392</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="amount integration">766f6565839312101b49bfc6feaad399</flow>
+        <flow_variables_assigned>active,retry_count,retry_timeout,integration_successful1,current_try,amount_brl,amount_usd</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:42:56</sys_created_on>
+        <sys_id>9b19bd6183d312101b49bfc6feaad393</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:26</sys_updated_on>
+        <ui_id>d1ce6f05-4ae4-4568-a58c-871fefdefc62</ui_id>
+        <values>H4sIAAAAAAAA/+2aXW/bNhSG/4qhqxUwPVLUZ3rVNQgQoFuHxO3NWgj8kkNMllx9JPEC//cdSrKt2I4vMtuoM91ZRxTPy8P3KZmDPllZVc6qshhnH4pCT1Lr4q/vQ0unJga/n6yUTZV1YTFR6ntlDa17llQmgOG31MUsYfOvbShmSWGGiDudyFy1c81YDlOUKrcunjZelfOZihLGVQJfj/NK/XrVTqElRAJKQi49ElBJiU0w4U7IY+HFijFJAwrjlh9/WMrblGtSwDPPskSxFAJZLo0UPLTUY6lSqSBTLXxoTVkqWZnl81UkV0x+TpN14E6nJUxnmcGPhf4H5nawGRcrWJVQzbvVY9RWqAmLu0wL9XlW6ixtIiXjSfuNyJJqmv7RyDe1VTGrknKztm34cnflqwJSqplZltHZio5v77KHm6WmK53WFWhfJplgyeqJlWWueVWqwuxWpceb5WtCn3btmUrUFNJGUzab6XQSzfLsXtepYHHT0SSBh1GcZA8g0VhtZDYpS0dQcza6gvhlHf7Kcm3K8jtMAx+blF9S/aNS18YTKrRdx449JAWXyOGUIc5igRgnggeCYdul1qLeguhHZVbWFLOtSdRUHgYUItezsvXNRQkLWcbMylv/wK994yBLWeXpYFKMJqr8M89AcDn/5Zv1GBHXcxzbi3Klp7yK8AiMoyY5MyuOmtm/WcNBXfZ3763FYjFcsQaz5vNIZBXs4Rq4bd5ejdq10VLXtuZM+Hs5Czuc3Rhpg4+ttJ16W+L0KseZEndEnNa1eY7Tel9OwhJhYciUwggH1EeOJyUKSOwizwkYkYqrELbqv7PUtceRgOqkMFTR3USVeqrguDsNU3wvU2KLqfFK3Auae67OhSvXF67HiId4gEPkuIGLQls6SOHYVUHAReCzg3G1NMhRyWqTGLY8vAlXd3hRCaGKIq4Sctq7ovBC7kvbfYE3r8Pb9Vrv4Haldw3ey+vpL5Nv6zLJsFAYYw+OvSBGTihcxKkjEbWpUAHj3Pf5K0Ctl98BRFR5boYDSR0oyDYU5GCnj9pLA+vQ8LERNxjX4nYq7k+eczl5mGPbhIGhbU/CyeMEFMF5EyMqwMwy9H2K3QMYmk3NTSviedLx8283n7Yd3QRf5+lbqHQ6WVqaCErAviFY2t+2NH7WDKjlDZrcuyS3hi6WCQ7u5wD+VTlzR6+K89zQq005iZ8DSXwcEvjznogAOTQMEItDD4XMIxjHfqhcdTg/V4Xs+PnL7eW2n5vgQfyM9/rZ3/Zzk3uX5N7PZ+JnKsG0MhYoFBQuHNyLEXPA1JwFwnak5/k0frWfvxvvNtmb1m3tM2u7J9q3cPtbd9/CPU4Ld4O5vpX7M5D39i/+/4NW7k6y+pZuz1ff0j1cS3cDsr61e24o9pfM07R2N0DpW7w/h/3f/kl07BbvZtOgb/X2rbG30Ord7eu+5dv7+rxbvlIJXYCqsZFwvfx/u+bFHHyjRTf0kOV/m/WsY4t/AfYLfm8BLAAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">944c3629831b12101b49bfc6feaad3b4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="amount integration">766f6565839312101b49bfc6feaad399</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>14</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:36:16</sys_created_on>
+        <sys_id>9c4c3629831b12101b49bfc6feaad3b4</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:26</sys_updated_on>
+        <ui_id>01028676-5a35-443c-9710-1be319db0516</ui_id>
+        <values>H4sIAAAAAAAA/+2UW2vbQBCF/0rQsxC6RKbxSwkthkDbQBPy0gYxWo3spatddS92XOP/3lmtZJvGaUvoY9+8Z3Znzhl9eBcpZ3tnzb26NoYvZTT/8hhHXHqNfu8iCR1G84gp2XDLlawGIY7WIJwv3EiLSw2+dLEALpzGt1RuuOkFbB9+f4utuGg0jlN70NTboo7mu19KdttjJaBGQc3urOZySc95Q6c2hTa7Yhkr8lmRp2n+5jKrZ0Wd5U0BCAXdmx6+m0JcfBiU+MV0fh7pZpqkdONtZWkc4ZNF2SCNbkEYjKMOZANW6e1B0QjNrRRHYcWlpXaRv/xk+A/qnZelv9giZWQYiodjNa4vyGylOMPb3hsMioVajG+YEq6Tn0IOv3hswQk7LZ4UZ6gf9t60dzFaau9WavN5Grjgcgg4FoViIA4nsLSG2lk0/sOgwI4aVR30PS2n6rVa8+ExeemSpaBD0gq1oaGeqASYN57QjiBZkP5+kB9Ac5/iI7Whx8FmDYazaqCP2llNEfbDWqrvzhsKAccoVdgGXTBM895e05w1jq738XN0T6jd7QaH69FEwo98VsYxhsa0TmT7/VeXpkUztHxO9Su7/Avqr6Bsyywtz1N/OTtH/RneX0Y9/wPq/uP8Jelpmv5H/RR1bqqA7JgtgPFa0h891mGCCdw0yLghI/deu5n+y31hSwBwdiptlP7mIxy1/U/pZPIUFQYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ca9b7d2583d312101b49bfc6feaad39f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="amount integration">766f6565839312101b49bfc6feaad399</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:53:46</sys_created_on>
+        <sys_id>c29b7d2583d312101b49bfc6feaad3a0</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:26</sys_updated_on>
+        <ui_id>5d5d7571-6c3c-4a93-b3c1-176cea4f84f3</ui_id>
+        <values>H4sIAAAAAAAA/+2UXWvbMBSG/0rwtTH+aMKam1E2CoFthbX0ZivmWDpOxGTJk+SkWfB/35Flp2FNaRm73F30nq/3HD/kEOnOtZ2zd/rKWrFW0fLbQxwJ5TX6fYgUNBgtI6YVF05oVQ5CHG1Bdj6wUg7XBnxoJuxspYA5scX3lMKFbSXs71/PZBshucFxeguGZjg00fLwR8jtWywlVCip4a0zQq2pXHB61SnU2SXLWJEvijxN83cXWbUoqiznBSAUlDcVfpiWmX0alPjFLf080u00SRvubWVpHOGjQ8WRRtcgLcZRA4qD02Z/VAwCv1HySdgI5ahd5JMfrfhFvfP53CfWSDsyDMHjsxxPGGS20YLhTesNBsVBJccapmXXqC9hD398rKGTbjo+KZ2lfth6097FaKm+3ejd12ngtVDDgmNQagby+AJHZ6g6h9Z/GJTYUKOygbal45St0VsxFJOXJllLeiS11Dsa6slK/OfWKqEbQXJN+sdBvgcj/BafqQ0VB5sVWMHKgUJq5wyt0A9nKX923lBYcFylDNegBMuMaN3VgNXouo+fI3xC7+EwONyOJpKAZN9/79K04EOH5yC/rehfMH0J83qepfPzTF8szjF9huaXQc5fAdmf/o0cp2n6H+RTkIUtA5DjbgGMv+X4wUMbJtjADUcmLBm589pq+sf2gT0BINiptNPmh1/hSet/A2D3ZqL7BQAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ca9b7d2583d312101b49bfc6feaad3a2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="amount integration">766f6565839312101b49bfc6feaad399</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:53:46</sys_created_on>
+        <sys_id>c29b7d2583d312101b49bfc6feaad3a3</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:26</sys_updated_on>
+        <ui_id>9a26d1d1-4899-4717-bd28-51226f201b89</ui_id>
+        <values>H4sIAAAAAAAA/+1V227TQBD9FeRny7Jj0lR5q0CVkKAVtOoLFGu9O05WrHfNXpKayP/OjC9JlDYCISReyJP37FzOmZ2j7CITfBO8uzdXzsmVjpafH+NIasLwexdpVkO0jLjRQnppdNEDcbRhKtAFfgrpGsXahwPC11IJC2O1hlnM8WCj5e7kyrcNFIqVoDDxzlupV5guBZ5KwWa8TF8v8jTP8jS9yGZ8tsgr/F2wxTzFuCnxzUTu1fseic+ypn6Iu6mTsYJoZWkaR/DkQQvA3hVTDuKoZlowb2y7RywwcavVAVhL7QfJNXty8gcWn83nFFgBiuTjPPbHYpzVNCYjOdw2xHBAPCvVNEOjQq1vBiE0ZahYUP5oysFhPWiINLEYKVV3a7P9NDW8lrpXOF4qw5nan5jHOZTBg6OXAQU1Fipq1jQ4naKxZiP7ZORSJyuFh6RSZotNaVUSxol4gjNiyTXib3v4gVlJKj5gGUzuevXF90B9Bx0j42IQjQGOW9n4Kyy3gZFcFz9fvaOt2+16IpuxV4LPACvL+qd2gXNwrgoq67ovIU1z4W2ArzcfT7MseNsW3ATtx0g+xJ8G8mAtMcbwrnu+8f+Yzd9wm1hk+WV1zm2X/CW3veCz8xab/cpiNJXfdFhKtf5bbLIYPqErBg+N2vrmf2y9R/LZ0MENiyOAS4dE7gl7N/050EWLGyD5MbQ19htJOGDdT8sM781mBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ce9b7d2583d312101b49bfc6feaad3a0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="amount integration">766f6565839312101b49bfc6feaad399</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>5d5d7571-6c3c-4a93-b3c1-176cea4f84f3</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:53:46</sys_created_on>
+        <sys_id>c69b7d2583d312101b49bfc6feaad3a1</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:26</sys_updated_on>
+        <ui_id>08d8797f-dd02-4d8e-ba52-bd8f8b2bcfba</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">810f762d831b12101b49bfc6feaad352</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="amount integration">766f6565839312101b49bfc6feaad399</flow>
+        <flow_variables_assigned>integration_successful1</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>9a26d1d1-4899-4717-bd28-51226f201b89</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:48:20</sys_created_on>
+        <sys_id>cd0f762d831b12101b49bfc6feaad352</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:26</sys_updated_on>
+        <ui_id>b1822a31-1ad9-4002-95a2-17c72f45935f</ui_id>
+        <values>H4sIAAAAAAAA/+1V224aMRD9lcrPQBeWcHuLFCEhtY3U0LxU0WrWngWrxt74AqGIf+8Mu0AaVWrfm6e1z9zOnBlrD8KlWKcYlu42BL2yYvb9qSO0ZYzOB2Fhg2JGSMSVh6idLUKSEkOokumLjtiCSezBZ6VDbWD/2ELR06cj5Fob5bHNXYOnlBG9mB3emOK+xsJAiYaClxT8cQ4mcAqtCJGjaTlWg5tJrvL+oJ/1y+G0rOSoQgCVT0bkdw5eXOl+eLjQJYe/tsMcyKF0ziBYApxXzDXrCHyJaBUSlYppdcQGrILo/P6CeAR1b80VWFMlSifY+SXon5R7mLFfhdS2xMZ2uRatgg0s105LvK+ZZoNEKE0bI51JG/ul6Ye1xwqSiWftq1a5Fr77fTJnawpUEmtui3m2pKuHtdt9PXOaa3tSoDUaJ8FcbhCj12WKGHicSS/fytdAn/40VDS4obLFBupa21VRe7fVp1LU3Ka3MnTpVcbtiCLvZg8kK9EjzaE3J/zuBD+C1yzLZ0pDwVzym9XPCRe8NJBJzLJs1J30J1V3OJU33TIfqm4+yCVOoCzH41IcTyMonhN31ojZalI0ypNDkF7X8ZYobLFt//jE699Ub17LaU//Zc3eX837q/mPX41CqQOxWjKFxflvw4Y97ZqWr6Gd8z+4nyt2/AVHSvCRtwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e805faed83d712101b49bfc6feaad3ea</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="amount integration">766f6565839312101b49bfc6feaad399</flow>
+        <flow_variables_assigned>current_try</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>effd183c-03af-4f9e-9035-469eb5258ad1</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:04:37</sys_created_on>
+        <sys_id>e005faed83d712101b49bfc6feaad3eb</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:26</sys_updated_on>
+        <ui_id>2e0b4467-a6d3-4988-bb38-aff190715d96</ui_id>
+        <values>H4sIAAAAAAAA/+1V227bMAz9lUCvS4zEdnN7KzYUCLCtwJb1ZSgMWqITYbLkylLSLMi/j/IlCbpuX5A384ji4Tki4SMz3lXe1WtzX9dyo9ny5/OQSR0w+j4yDSWyJePeWtQuc/bAhmwHygeUPoWsKwWHpwvCt1IJSm5LVWCpgkPLlsc3R+5QYaYgR0UXV9rhhrKIXAQ+XOQzEd/NE5FM4sl4kqeLvODTAgFEMgfK629+bFsbrJvW3u03MBEozxzGitDReMjw1aEWSJwFqBqHrAQtwBm61yMWQTxqdQG2VKjVWsJrLX9T7XQc8gokUt75cA6zzqPeHiM5PlZOGt0iDnLVe2eUL/XXVkNwFwvwyl2562uqh1XoOTTRdVR835r9t57wQepGXneoDAd1jsA5K3PvsA4v4uX6rTct9Pmvd0GFZbC0hKqSepNV1uxkw0Ntl9FGURAVyuypvzBKEfCgMSI3IXog/FMDP4GVQfAXKtPx/dDyxeMqvDukcTyB8XQUT8VilKbzZDSf58Uo4ZDnYjGbJeM7dmrMzV58kNXa1BmStZ5SQs2trNw9tbAjec567LFmEK/Gg8L/JROV81YPCpE1ShqFO7DRVY3Bh8GEnU6n57Aarbx2e5pZ/tdU3rbotkW3LXp3iwRyWZPsddC46v9G4eBAoyn5NbQ39lcod8FOfwDyTHFl1wYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=766f6565839312101b49bfc6feaad399"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=766f6565839312101b49bfc6feaad399^sys_idNOT IN1031fea983d712101b49bfc6feaad307,1c31fea983d712101b49bfc6feaad303,8319bd6183d312101b49bfc6feaad383,c69b7d2583d312101b49bfc6feaad386,c719bd6183d312101b49bfc6feaad389,cb19bd6183d312101b49bfc6feaad38c,ce9b7d2583d312101b49bfc6feaad38a"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3d0f7dfc-9c3f-4b6f-a498-ba8c24d6673f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>amount_usd</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Amount USD</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="amount integration">766f6565839312101b49bfc6feaad399</model>
+        <model_id>766f6565839312101b49bfc6feaad399</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_766f6565839312101b49bfc6feaad399</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 18:47:57</sys_created_on>
+        <sys_id>1031fea983d712101b49bfc6feaad307</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 18:47:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=8d17091c-a1c8-4398-af96-9a6100f79e5e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>amount_brl</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Amount BRL</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="amount integration">766f6565839312101b49bfc6feaad399</model>
+        <model_id>766f6565839312101b49bfc6feaad399</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_766f6565839312101b49bfc6feaad399</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 18:47:57</sys_created_on>
+        <sys_id>1c31fea983d712101b49bfc6feaad303</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 18:47:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=e92542f6-dcbd-4b3a-bafc-ab1cb8ca0253</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>active</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Active</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="amount integration">766f6565839312101b49bfc6feaad399</model>
+        <model_id>766f6565839312101b49bfc6feaad399</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_766f6565839312101b49bfc6feaad399</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:42:55</sys_created_on>
+        <sys_id>8319bd6183d312101b49bfc6feaad383</sys_id>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=a0ce0006-818f-49c5-b34d-323ce8abb77b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>false</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>integration_successful1</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Integration Successful</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="amount integration">766f6565839312101b49bfc6feaad399</model>
+        <model_id>766f6565839312101b49bfc6feaad399</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_766f6565839312101b49bfc6feaad399</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:53:46</sys_created_on>
+        <sys_id>c69b7d2583d312101b49bfc6feaad386</sys_id>
+        <sys_mod_count>21</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:26</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=1a99aee0-0837-46dd-81f5-648a1debe9ed</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="amount integration">766f6565839312101b49bfc6feaad399</model>
+        <model_id>766f6565839312101b49bfc6feaad399</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_766f6565839312101b49bfc6feaad399</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:42:56</sys_created_on>
+        <sys_id>c719bd6183d312101b49bfc6feaad389</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:42:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=57c56a16-b809-4585-92d4-e0f5e88bc87a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_timeout</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry Timeout</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="amount integration">766f6565839312101b49bfc6feaad399</model>
+        <model_id>766f6565839312101b49bfc6feaad399</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_766f6565839312101b49bfc6feaad399</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:42:56</sys_created_on>
+        <sys_id>cb19bd6183d312101b49bfc6feaad38c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:42:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=a4221a06-26d9-4483-88bf-3cabbd977305</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current_try</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Current Try</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="amount integration">766f6565839312101b49bfc6feaad399</model>
+        <model_id>766f6565839312101b49bfc6feaad399</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_766f6565839312101b49bfc6feaad399</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:53:46</sys_created_on>
+        <sys_id>ce9b7d2583d312101b49bfc6feaad38a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:53:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_766f6565839312101b49bfc6feaad399^sys_idNOT IN14f2f1a9839312101b49bfc6feaad380,54f275a9839312101b49bfc6feaad343"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_766f6565839312101b49bfc6feaad399</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:15:58</sys_created_on>
+        <sys_id>14f2f1a9839312101b49bfc6feaad380</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Reimbursement - Hygor Oliveira" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:15:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_766f6565839312101b49bfc6feaad399</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:15:58</sys_created_on>
+        <sys_id>54f275a9839312101b49bfc6feaad343</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Reimbursement - Hygor Oliveira" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:15:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_766f6565839312101b49bfc6feaad399"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_766f6565839312101b49bfc6feaad399"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_766f6565839312101b49bfc6feaad399"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>amount_integration</internal_name>
+        <label_cache>[{"name":"d8c03ab5-c874-48d1-8ad4-1f5ce0d97a0b.duration","label":"10 - Seconds to Duration➛Duration","reference_display":"Duration","type":"glide_duration","base_type":"glide_duration","usedInstances":{"067977c2-66e7-42a1-a731-835cad03a353":["timer_duration"]},"attributes":{"uiType":"glide_duration","uiTypeLabel":"Duration","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"efc1399c-cef9-4794-bb24-0dec31205815"}},{"name":"flow_variable.retry_timeout","label":"Flow Variables➛Retry Timeout","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"d8c03ab5-c874-48d1-8ad4-1f5ce0d97a0b":["seconds"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"57c56a16-b809-4585-92d4-e0f5e88bc87a"}},{"name":"flow_variable.amount_usd","label":"Flow Variables➛Amount USD","type":"string","base_type":"string","usedInstances":{"ba268d83-7506-49a3-85c2-b67385f198aa":["currencies"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"3d0f7dfc-9c3f-4b6f-a498-ba8c24d6673f"}},{"name":"flow_variable.amount_brl","label":"Flow Variables➛Amount BRL","type":"string","base_type":"string","usedInstances":{"ba268d83-7506-49a3-85c2-b67385f198aa":["base_currency"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"8d17091c-a1c8-4398-af96-9a6100f79e5e"}},{"name":"flow_variable.current_try","label":"Flow Variables➛Current Try","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"9a26d1d1-4899-4717-bd28-51226f201b89":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"a4221a06-26d9-4483-88bf-3cabbd977305"}},{"name":"flow_variable.retry_count","label":"Flow Variables➛Retry Count","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"9a26d1d1-4899-4717-bd28-51226f201b89":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"1a99aee0-0837-46dd-81f5-648a1debe9ed"}},{"name":"flow_variable.integration_successful1","label":"Flow Variables➛Integration Successful","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","usedInstances":{"9a26d1d1-4899-4717-bd28-51226f201b89":["condition"],"01028676-5a35-443c-9710-1be319db0516":["condition"]},"attributes":{"uiType":"boolean","uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"a0ce0006-818f-49c5-b34d-323ce8abb77b"}},{"name":"flow_variable.active","label":"Flow Variables➛Active","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","choices":[],"usedInstances":{"5d5d7571-6c3c-4a93-b3c1-176cea4f84f3":["condition"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"e92542f6-dcbd-4b3a-bafc-ab1cb8ca0253"}},{"name":"Created_1.current","label":"Trigger - Record Created➛Reimbursement Record","reference":"x_1564426_reimbu_0_reimbursement","reference_display":"Reimbursement","type":"reference","base_type":"reference","usedInstances":{"120c850e-86ca-4924-a5cf-4767601aa6f3":["record"],"35860cbd-6faa-4fb3-8758-485b3bd73efd":["record"],"d598a6d3-8b50-4a36-9255-41553dbc7565":["record"],"39ce1673-01e7-495c-9bb7-b460a0401fda":["record"],"70780a93-dae9-4721-a58a-7651c06c9d8a":["record"]},"attributes":{}},{"name":"Created_1.current.amount_brl","label":"Trigger - Record Created➛Reimbursement Record➛Amount BRL","reference":"","reference_display":"Amount BRL","type":"currency","base_type":"currency","parent_table_name":"x_1564426_reimbu_0_reimbursement","column_name":"amount_brl","usedInstances":{}},{"name":"Created_1.current.amount_usd","label":"Trigger - Record Created➛Reimbursement Record➛Amount USD","reference":"","reference_display":"Amount USD","type":"currency","base_type":"currency","parent_table_name":"x_1564426_reimbu_0_reimbursement","column_name":"amount_usd","usedInstances":{}},{"name":"35860cbd-6faa-4fb3-8758-485b3bd73efd.__action_status__.code","label":"4 - Update Record➛Action Status➛Code","reference":"","reference_display":"","type":"integer","base_type":"integer","column_name":"","usedInstances":{"effd183c-03af-4f9e-9035-469eb5258ad1":["condition"]},"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>amount integration</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="amount integration">766f6565839312101b49bfc6feaad399</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:43:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9029fd6183d312101b49bfc6feaad331</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:29</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=9029fd6183d312101b49bfc6feaad331"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9029fd6183d312101b49bfc6feaad331"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9029fd6183d312101b49bfc6feaad331"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9029fd6183d312101b49bfc6feaad331^sys_idNOT INd429fd6183d312101b49bfc6feaad332"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9029fd6183d312101b49bfc6feaad331</id>
+        <name>amount integration</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:43:01</sys_created_on>
+        <sys_id>d429fd6183d312101b49bfc6feaad332</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:43:01</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d429fd6183d312101b49bfc6feaad332"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9029fd6183d312101b49bfc6feaad331^sys_idNOT IN2c29fd6183d312101b49bfc6feaad333,e829fd6183d312101b49bfc6feaad364"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="amount integration">9029fd6183d312101b49bfc6feaad331</model>
+        <model_id>9029fd6183d312101b49bfc6feaad331</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9029fd6183d312101b49bfc6feaad331</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:43:01</sys_created_on>
+        <sys_id>2c29fd6183d312101b49bfc6feaad333</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2c29fd6183d312101b49bfc6feaad333"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="amount integration">9029fd6183d312101b49bfc6feaad331</model>
+        <model_id>9029fd6183d312101b49bfc6feaad331</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_9029fd6183d312101b49bfc6feaad331</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:43:01</sys_created_on>
+        <sys_id>e829fd6183d312101b49bfc6feaad364</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e829fd6183d312101b49bfc6feaad364"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=9029fd6183d312101b49bfc6feaad331"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9029fd6183d312101b49bfc6feaad331"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=9029fd6183d312101b49bfc6feaad331^sys_idNOT INe429fd6183d312101b49bfc6feaad386"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="amount integration">9029fd6183d312101b49bfc6feaad331</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:43:01</sys_created_on>
+        <sys_id>e429fd6183d312101b49bfc6feaad386</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:43:01</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+VaXW/bNhT9K4KeNiAD9GFbVt66JMUCdM3gpNtDFhCUdGkLkylPopS4Rf77Li1KlmUple10tdOXoialy3sOzz2XInL/RY+oB5F+rt9RLwL9TA+5gITT6G65ABwWcphwOpdzc8oDKuJkqZ+LJIMzPU4CSPRz80zPaZTB7TK9DvAlfHT1hnpdV9P4+4mYw9FgYI1IAuHcy4ih/pOkMAcu8NEgTBcRXf6p3pg0phc0wdBCLvtF92dhFCTA9fP7B0xdru0zn7oWGL5t2pZlGNZ4YHoj2zOtwKZgGBiiCbmRq2hBvgYKTwJ4ALgUo1EKLaQkQIMbHi2rJ2bIacHKnD6l4WeMPjbkcwwwdx+KueonUQwUw/4sDn24WYgw5sVIkWcxGUfZnH8s8pfcAaNZJErucCRLMR4sZMoyCZURu53Fj5NywfchX6FTk1Hs06j6RYVIQi8TkErCWRgh9aTgJo2zZJX95OriZnJJ/np3d/Hb1YRMrm7vJtcXd1eX+vMKF/k3kxGLDFUupIDzXG34+xAiuYE8m3uYzZme+km4EO98Eeag0nk+Wws2yTjGINV+bEm3YK6i8EOYIgH3iKGkZxUS59kHFXKScS3GncN/ND9LkByhlapg13M6VaSyP0oRrkhR+slpQsicpMuUzDKPIG3TKXIV8kUmiOOOXXNEO2Tp+BvUrKoFQ9/r+sOz3C2IwBc1zbFPaf3X72GahnxaI6nCKCW5DbFCh9rVSgYLqOlpYX3YKED1UFmthtFpTNvqyRuqaPhQD+sxTcY8YJbhSNSmYXvMNBxjSFlgG4Zv1axne/nOvERDzXVwL5mRGunjRoMd3Shd1VHUo2qapJbJ1wu5lyTzTT2rOJbcf2V6F0eYWsO87Z3cuxJiMXzZ6IsvQHtl06dBTvGNoMTYx9R7mPfjDDhJQQhZzru7N8cyWb1Di0VqJif1rkmCWJxoH2P+y/X6Oe0W0EAwz5Oyubql9wGNwRLtTaH2YjFrNjKJ9Fcc30Aqi7Rjz3+g3tYornyTxT16GwzGQ5fZvoOYsZuxAXjUHFhD6jojm7mN3tZYvjuxo+9uPb0k73Sltr7St1bz1pKvOkyjU+1TDg1hqND2V/rqj0vKQR29rL7Ohr5PsqfR7FkUP6IG9ujzHvX/mSZxxoMt+8eYWsi19RPaT4rbn0/L6euNDjUAL+PdfOJ0UB7Sz9b6KYuT8uVencxmpufCAAz8OLOxk3lD1/V8ajHmjBywzEYnWy/cms3R968ehZK3VVrX51CrCPM27e7wjfb9EzzI15UUW229mDt+k76IeRCKosM2LbqcSvU9K9ivBS+3IhVUwN+ZYdjBuEfZjkaUBtBlVB6rlW0dSksCogXVNylb4ztd8hbX0HuLax4HEF2uw+kbHUOy9Ui5SImICQ0CUuOxpxoLbNs3v3r/awNEnBx0dyBTARKzeo+9jDWc0HARLWSaQg2B5i01MQM0lAitBRfU5Oon9i1ZP2FsI6+O3m8ad2HFWzcIOLxCdlrADr4caJTQoccqCBw6HNpO+wWB2zxWtaXwlQyP/qi1s3/kbXb04qfxbnGbMVs/jmvy39RAz7uAN4z6mx0KW7I4/hPiZl1Gsqludd5pFAZQzr2CP6lI+dqHdncmNnb9oel0ONN42OlMavGXEhMtsP+Xs6RsQEo5bQ71qZg6rj8eeC1NPvwHC+1MprciAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=9029fd6183d312101b49bfc6feaad331^sys_idNOT IN059c3e29831b12101b49bfc6feaad34e,059c3e29831b12101b49bfc6feaad34f,0d9c3e29831b12101b49bfc6feaad34e,3a0ff62d831b12101b49bfc6feaad30b,899c3e29831b12101b49bfc6feaad34c,c19c3e29831b12101b49bfc6feaad350,c59c3e29831b12101b49bfc6feaad34d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Seconds to Duration">c2763a61831b12101b49bfc6feaad39a</action_type>
+        <action_type_parent display_value="Seconds to Duration">aba57e2d83d712101b49bfc6feaad3d0</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>c2763a61831b12101b49bfc6feaad39a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="amount integration">9029fd6183d312101b49bfc6feaad331</flow>
+        <generation_source/>
+        <order>10</order>
+        <parent_ui_id>effd183c-03af-4f9e-9035-469eb5258ad1</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:37:42</sys_created_on>
+        <sys_id>059c3e29831b12101b49bfc6feaad34e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:29</sys_updated_on>
+        <ui_id>d8c03ab5-c874-48d1-8ad4-1f5ce0d97a0b</ui_id>
+        <values>H4sIAAAAAAAA/41Sy27bMBD8F55twYpl1fatSBAgQNsAdZtLEAgrcmkToEiFDyeq4X/v0mLUILn0yOHs7szsPp6YEmzLeP2lXkJdrpdlW16Vi7KtNq3ktUQAsdwINmMGOiSmR26N8AQcQceEnE5S25fmCE5Bq7FwGNzQBNWhjeF8JqZQvtcwPOQCQvhBaeHQsO3j04z14Kh5QMe2pw9f/6tOQ4uaqLtJ3ie9YegToEzAPY0agW+57m5CrRNJSDlj+BrQCCQFErTHGevACAjWDWwbXCTAIYh7o4eJcaDuo8MOXr36QwOrReJJJEs8u5+eTU5mhOUNBNhRZx6im4KyiqMfwxAoIepw/R4bCfd9UNaMJSFtIVdbHTvzY0yCTQ3eLSJ6EoF98pmUZxtyd7AvP99U3ipziSR/astBTy8Iwak2hqTnxKL69THlEfqcM2rsaGbTQd8rs296Z4/qModkd8Ve06O4XJZAr/amAJ48FrQBKG4Jv7nAD/nsvlObPO+3Uc8R79LlXMl2VdX1Yr5YQTuv1nw5X8v1Zs7baslFva5XUrDzjPnBX2vw/l9UtKPmOSajY3A5omZMOZVwp/rwlUQdMadxfvoLZ/nOMFADAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="amount integration">9029fd6183d312101b49bfc6feaad331</flow>
+        <generation_source/>
+        <order>15</order>
+        <parent_ui_id>01028676-5a35-443c-9710-1be319db0516</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:37:42</sys_created_on>
+        <sys_id>059c3e29831b12101b49bfc6feaad34f</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:29</sys_updated_on>
+        <ui_id>39ce1673-01e7-495c-9bb7-b460a0401fda</ui_id>
+        <values>H4sIAAAAAAAA/+VVXWviQBT9K2WeQ0iMSuvboggL3Rbs4ku3DJPMjQ5MPnY+rK743/cmmcSgxbXQF9k8Ze7HzDkn92Re90RwMiFD4EH4EI6TKIyiQRAM7odhPI7icMAjBhASj+QsA6xUkBSK43rDpK0C+/1UATPAaegnVinIzeGAeS50Kdlu6cowkqyF5Jgnk9c3j5RM4Y4GFJnsT1LXQpIsBomlixbTKUazK6s1LxKbIS4q2uCj65y5zN33GWawqYITBh6BrYGcAwJJmdTgkYzlnJlC7cjEKIsBJM2fc7nrKtYiNw3RjG21+IMnD4OqLgVkljgRuiV1AjXhdMYMe8GdE2NVp1chEtCNJhxSZqWZ9mNNwXNpRJE3LYbFsu0upM3yp0YR0m3Q+x5WIwgoK54V8oZW+rIu3hctyLnIa0kcRVkkTHYrZowSsTUVnD0BCbXGGStLka9oqYqNqJsRSuavJC78VBbveKYWq9xnSYXbR1WZP8f4rA4vmRIViR+4DTYfPKJ3eiqZ1kcqqCH9bSskDTFHgdYq1BLQehKq5kSJ0nzDozbggB88N/Tx6NKEJQ/HgerteRz8LQ1H4+FwMKYKRBZbGrgXpWslzj2wOEl/zhBXwG0N8bMeg4/hO0+cxR77vXdPTcI5YvRljri/JUc4GjdviX8ZIRhc/NX2Jqmefd0zAX5hWClWwaba4DXwywZBxIfnw3+h8nM+uAJt64O5AMn1B/BbE0CGEA3Qhs6JEVzybumS3fXwZW4Ix0H93JAn/ptb4u0vzmm28RwJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="amount integration">9029fd6183d312101b49bfc6feaad331</flow>
+        <generation_source/>
+        <order>12</order>
+        <parent_ui_id>9a26d1d1-4899-4717-bd28-51226f201b89</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:37:42</sys_created_on>
+        <sys_id>0d9c3e29831b12101b49bfc6feaad34e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:29</sys_updated_on>
+        <ui_id>d598a6d3-8b50-4a36-9255-41553dbc7565</ui_id>
+        <values>H4sIAAAAAAAA/+VVXWviQBT9K2WeQ0iMSuvboggL3Rbs4ku3DJPMjQ5MPnY+rK743/cmmcSgxbXQF9k8Ze7HzDkn92Re90RwMiFD4EH4EI6TKIyiQRAM7odhPI7icMAjBhASj+QsA6xUkBSK43rDpK0C+/1UATPAaegnVinIzeGAeS50Kdlu6cowkqyF5Jgnk9c3j5RM4Y4GFJnsT1LXQpIsBomlixbTKUazK6s1LxKbIS4q2uCj65y5zN33GWawqYITBh6BrYGcAwJJmdTgkYzlnJlC7cjEKIsBJM2fc7nrKtYiNw3RjG21+IMnD4OqLgVkljgRuiV1AjXhdMYMe8GdE2NVp1chEtCNJhxSZqWZ9mNNwXNpRJE3LYbFsu0upM3yp0YR0m3Q+x5WIwgoK54V8oZW+rIu3hctyLnIa0kcRVkkTHYrZowSsTUVnD0BCbXGGStLka9oqYqNqJsRSuavJC78VBbveKYWq9xnSYXbR1WZP8f4rA4vmRIViR+4DTYfPKJ3eiqZ1kcqqCH9bSskDTFHgdYq1BLQehKq5kSJ0nzDozbggB88N/Tx6NKEJQ/HgerteRz8LQ1H4+FwMKYKRBZbGrgXpWslzj2wOEl/zhBXwG0N8bMeg4/hO0+cxR77vXdPTcI5YvRljri/JUc4GjdviX8ZIRhc/NX2Jqmefd0zAX5hWClWwaba4DXwywZBxKPz4b9Q+TkfXIG29cFcgOT6A/itCSBDiAZoQ+fECC55t3TJ7nr4MjeE46B+bsgT/80t8fYX8dZNHRwJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="amount integration">9029fd6183d312101b49bfc6feaad331</flow>
+        <generation_source/>
+        <order>17</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:48:28</sys_created_on>
+        <sys_id>3a0ff62d831b12101b49bfc6feaad30b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:28</sys_updated_on>
+        <ui_id>70780a93-dae9-4721-a58a-7651c06c9d8a</ui_id>
+        <values>H4sIAAAAAAAA/+VVXWviQBT9K2WeQ0iMSuvboggL3Rbs4ku3DJPMjQ5MPnY+rK743/cmmcSgxbXQF9k8Ze7HzDkn92Re90RwMiFD4EH4EI6TKIyiQRAM7odhPI7icMAjBhASj+QsA6xUkBSK43rDpK0C+/1UATPAaegnVinIzeGAeS50Kdlu6cowkqyF5Jgnk9c3j5RM4Y4GFJnsT1LXQpIsBomlixbTKUazK6s1LxKbIS4q2uCj65y5zN33GWawqYITBh6BrYGcAwJJmdTgkYzlnJlC7cjEKIsBJM2fc7nrKtYiNw3RjG21+IMnD4OqLgVkljgRuiV1AjXhdMYMe8GdE2NVp1chEtCNJhxSZqWZ9mNNwXNpRJE3LYbFsu0upM3yp0YR0m3Q+x5WIwgoK54V8oZW+rIu3hctyLnIa0kcRVkkTHYrZowSsTUVnD0BCbXGGStLka9oqYqNqJsRSuavJC78VBbveKYWq9xnSYXbR1WZP8f4rA4vmRIViR+4DTYfPKJ3eiqZ1kcqqCH9bSskDTFHgdYq1BLQehKq5kSJ0nzDozbggB88N/Tx6NKEJQ/HgerteRz8LQ1H4+FwMKYKRBZbGrgXpWslzj2wOEl/zhBXwG0N8bMeg4/hO0+cxR77vXdPTcI5YvRljri/JUc4GjdviX8ZIRhc/NX2Jqmefd0zAX5hWClWwaba4DXwywZBxKPz4b9Q+TkfXIG29cFcgOT6A/itCSBDiAZoQ+fECC55t3TJ7nr4MjeE46B+bsgT/80t8fYX8dZNHRwJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="amount integration">9029fd6183d312101b49bfc6feaad331</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:37:42</sys_created_on>
+        <sys_id>899c3e29831b12101b49bfc6feaad34c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:37:42</sys_updated_on>
+        <ui_id>35860cbd-6faa-4fb3-8758-485b3bd73efd</ui_id>
+        <values>H4sIAAAAAAAA/+VVXWviQBT9K2WeQ0iMSuvboggL3Rbs4ku3DJPMjQ5MPnY+rK743/cmmcSgxbXQF9k8Ze7HzDkn92Re90RwMiFD4EH4EI6TKIyiQRAM7odhPI7icMAjBhASj+QsA6xUkBSK43rDpK0C+/1UATPAaegnVinIzeGAeS50Kdlu6cowkqyF5Jgnk9c3j5RM4Y4GFJnsT1LXQpIsBomlixbTKUazK6s1LxKbIS4q2uCj65y5zN33GWawqYITBh6BrYGcAwJJmdTgkYzlnJlC7cjEKIsBJM2fc7nrKtYiNw3RjG21+IMnD4OqLgVkljgRuiV1AjXhdMYMe8GdE2NVp1chEtCNJhxSZqWZ9mNNwXNpRJE3LYbFsu0upM3yp0YR0m3Q+x5WIwgoK54V8oZW+rIu3hctyLnIa0kcRVkkTHYrZowSsTUVnD0BCbXGGStLka9oqYqNqJsRSuavJC78VBbveKYWq9xnSYXbR1WZP8f4rA4vmRIViR+4DTYfPKJ3eiqZ1kcqqCH9bSskDTFHgdYq1BLQehKq5kSJ0nzDozbggB88N/Tx6NKEJQ/HgerteRz8LQ1H4+FwMKYKRBZbGrgXpWslzj2wOEl/zhBXwG0N8bMeg4/hO0+cxR77vXdPTcI5YvRljri/JUc4GjdviX8ZIRhc/NX2Jqmefd0zAX5hWClWwaba4DXwywZBxAfnw3+h8nM+uAJt64O5AMn1B/BbE0CGEA3Qhs6JEVzybumS3fXwZW4Ix0H93JAn/ptb4u0v1TGD8BwJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2b3a6335531003003bf1d9109ec58759</compiled_snapshot>
+        <display_text/>
+        <flow display_value="amount integration">9029fd6183d312101b49bfc6feaad331</flow>
+        <generation_source/>
+        <order>16</order>
+        <parent_ui_id>01028676-5a35-443c-9710-1be319db0516</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:37:42</sys_created_on>
+        <sys_id>c19c3e29831b12101b49bfc6feaad350</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:29</sys_updated_on>
+        <ui_id>404b1e55-97ab-41e0-b7ea-7adcaa39d576</ui_id>
+        <values>H4sIAAAAAAAA/9VVy04bMRT9lcjrKJ2QhkB2FSirFqRSpQtKR3c8dxKrHntqexJSxNd00Q/hx7gee5IUKA0tC5Cy8X353ONzJudXTORszHA0gP3BYDgc9JNkQL+s6OeH/eQQ+fBgNOSsyxSUSJUO7LfUQSaRYguQtQ8KxUWOylEoF7aSsJrez/C5kLlBxcbnF11WgaGBDg0bX91J7YpIQoaSSj9FNA8hdKsqxOiYNgUh9n67t3MSEtrkHk/SZXjpUOVIQAqQFrusBJWD02bFxs7UFDAI+amSq3XFXNCWY8Z87aUVP+jag8TXFUibcQy59TGNRIVwcQwOzmgyd7WJpXyuBUcbOMmxgFq6o+1YKDitnNAqtIStQ7eWdalOAiVsPaB9F4rUlkBg5ff0yOMaxdlcLz+2KCdCNZTEpNQc5PoEzhmR1c7juWIZ0LwWgH8DugIlljQ8LaGqhJqlldEL0QwkfGVvJunQK6ReEhArZqoH3C/TI6qhN6H4cROeghF+8AcaQ83XXWZX9kiCtZv9iNj0e+3RhW3jXmmgxrdwIyr3ji5YYFzhuhvlv/eo2PazjbgKgTJPG93bLQMQ/GY8gf9SU38+ATmHjoIOqQJnBm5+3fzUnYlB5LUhat3qKwfKkKJCg9WFW4LB+xZ61tlPM+EOvLQmnHhiOtOWmIfpat2IJS3oMCTuOjImw6yNK/uPuzJGdrHl/jBJXpMzwwfnn435Uky49V3+ix2L4jHZjUYbfS1BuC0bJvfd00x+svB3QNAK/3OA8DugKPRMa4mg7iqc3vPNJOKK6t57NnW/fU3S/t8/nZei7T8p+uIWu/4Wx2EJAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="integration freecurrency API">a1884229831712101b49bfc6feaad311</action_type>
+        <action_type_parent display_value="integration freecurrency API">06fbbda183d312101b49bfc6feaad37e</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>a1884229831712101b49bfc6feaad311</compiled_snapshot>
+        <display_text/>
+        <flow display_value="amount integration">9029fd6183d312101b49bfc6feaad331</flow>
+        <generation_source/>
+        <order>7</order>
+        <parent_ui_id>9a26d1d1-4899-4717-bd28-51226f201b89</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:37:42</sys_created_on>
+        <sys_id>c59c3e29831b12101b49bfc6feaad34d</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:29</sys_updated_on>
+        <ui_id>ba268d83-7506-49a3-85c2-b67385f198aa</ui_id>
+        <values>H4sIAAAAAAAA/+1Ty27bMBD8lYJny5BkyZJ9ax0EKNA2QNPmEgTCilzZBChKoUgnruF/79KS7SB92UBPRY8cznJnhzv3WyYFmzOM8jyJ41k+ibIojsKoTGZlxacVAohJlLAR01AjMUvosODOGNR8Q/AalPP4dlup5qlYg5FQKhxD3Thti9Ko3Y5oQnatgs3deWy+kkpQBza/fxixFgz1tmjYfPvq6lzxCkpURH1H6t8sTup/MZTdtB7urJF6OZw/DE/cHsDGCC8pGjF8tqgFkpYKVIcjVoMWYBuzYXNrHAEGQdxotTkyVlJbeox57nMnv1G7PAxDz6zQy8D+9ngsBgd7uLoCC6TEcevMQOWrRnLsemMEVuCUXbzEesJNa2Wj+xLrzR+qG+Vq/an3gx0fOHwYIY48Etj6Sb32YZDqdtU8fT6ovJZ6b8pwqRoO6ngCS9aVzno9W+bkl1cu98gPPqPCmjoWNbQtIUVrmrXcdyHR9Xip6DDer5PATi71GLifcEw/AONrwq/28N2wax/pGSr27b5q+ejwvd+hLJukMWZZEIdpGiSI0yCHyTSAHETI0ziuZsh2I9ZtuoWCrjsZRT9UPDo/Zm/bYFDRe+xLuJGtfUui1jh4sRsNuYP0t6s7O63osJ2SzPtj6FwnLgjdgX1Z6M5Qfgjd4qX0n41zSdzi/3H7B+IWRckk4xAFPMySIIknWQDAo2CazzBKRAgppn8xbg/fATtL5q3oBgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=9029fd6183d312101b49bfc6feaad331"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=9029fd6183d312101b49bfc6feaad331^sys_idNOT IN499c3e29831b12101b49bfc6feaad358,819c3e29831b12101b49bfc6feaad35a,859c3e29831b12101b49bfc6feaad355,899c3e29831b12101b49bfc6feaad357,ac29fd6183d312101b49bfc6feaad384,c19c3e29831b12101b49bfc6feaad353,c59c3e29831b12101b49bfc6feaad354,c99c3e29831b12101b49bfc6feaad356,fa0ff62d831b12101b49bfc6feaad313"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">104c3629831b12101b49bfc6feaad3b2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="amount integration">9029fd6183d312101b49bfc6feaad331</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Wait for a duration of time">fdb2541473031300b61e66476bf6a70e</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <parent_ui_id>effd183c-03af-4f9e-9035-469eb5258ad1</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:37:42</sys_created_on>
+        <sys_id>499c3e29831b12101b49bfc6feaad358</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:29</sys_updated_on>
+        <ui_id>067977c2-66e7-42a1-a731-835cad03a353</ui_id>
+        <values>H4sIAAAAAAAA/+1ZbW/iOBD+KyifKZf3AN9W7VVaaV9OBfXLqYocewLWmSTnOO1yiP9+duK8AIEtu3TFSv3UZsYZPzPzPBO73RhpIbJC5PP0Q57TRWJM/34aGjRRNvn7xkjQCoypQQqOBE2TUKwzMIbGM2KFssO3jFFMRVgvkD5C84yh9aNe8qdeMugswUvKCAe9XYa43EUAN6abPRclMoI7CRxvbLmBYzqWY5qRb4Hvu4EfxT4Kxp4MyFAETC6903sM5hXOI/DLH1O5V0px/fxJh7itjSknCpJlmkOZp4CEgEQTI5bD0FihhCCR8nVj4YDI14S1hiVNhIxnqMXfcvqf3NE11boYZH4YKl/zGOq6Veb4Dgk0E7zAouB6aQW36kudcF91TzVHJ2Vuh22MB2DS/Qx9Mbj29cSwujH+Ao4hEWjRGyVrvD1x7K1sNIEYFUzcXi5F6wIp2hdK0VEpVu37mpWuqeEo3qGI1c1NWbFKvlR8NZqCPJ4SWrXk7vt6K3KJCjJFYcVJTdB4tkxfHmr+3dOkxKqdLMWINU9ICE6jQqjWbAxgsJKBwhXKMposwoynz7R8WaaxGi2YfBjFLH2Rm6qpMkJYARlJxaDRvbTfleZHxKkqwGcZRr68HRr5Or9lKM/bMkh5hP8WCklVFJ1DWJawfAVzmokPWHVQw1VN08LvdEXQFfCwHG2hBALqudO/w8F19pyKYov4lm9FgePbck45LvYx+BMAy0IT2+zMqQ6XSlyDEtdA4RpoYK/OQA+zsuqlPew46qkmxwn8Ma/sbzDYyliXmGx9o+BQO2dJ53fhv2RRHlZ01rmVm7+JLioqtdy6rBDGpuM45gR7TtAIgRCAOA4iywarVwgt5XvAaY5L4sGiLFWX2x8b6zuz35ldkqfnA73ZkDE2HRR5N3gcuDfumFg3Y0TcGyv2MJhkEiAzGtVvbreHQjAHM8BpQvKzFQGx5Xr42BE2gp4j7L4eOintTvxd+6fDMPVh5goPsu+i+IWiODjohqkEoprfkQmKRQluj/q1+TzaE4xcy/SO0N72O7Sfl8cgvn9OH3Qgvj6Zc+53zhXKor101HXfb0/fPS6COOXdT3ljaK5Ep29a39nMOmsz+6fvPA0Ve+85tXdP7LKk16j1GiFeh6funZ1lmsMtEc8fDLt/9vjhKfE2tyUrtj1ydDYEzonZcHhLegX0H70muVc4H37JZ/MnldT/dRu+K0yWZQmkYBfWUxx5njxkHtGTb+8eMWXlB2IJgzhlsqTqqYPqGFpdsJbBu+J56Ni1eLwLisexd8WDV0kXXJ+QZq37CgR1/jk0ngHieHlPgakWl3353f4Y96RYXsVuKo1pLiHMle1j/b8G5VjLDCnuml5S/o8C39q2/wMt9PmdtRgAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">944c3629831b12101b49bfc6feaad3b4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="amount integration">9029fd6183d312101b49bfc6feaad331</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>14</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:37:42</sys_created_on>
+        <sys_id>819c3e29831b12101b49bfc6feaad35a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:29</sys_updated_on>
+        <ui_id>01028676-5a35-443c-9710-1be319db0516</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lYBnQdAjNhpfisCBgQBpAzRBLm0grCjKJkqRKh92XMH/3qUo2UbjPtLk2Js4Sy5nhjtQR5SzrbPmXl0aw5eSzD4/RoRLj+F3RyQ0jMwIVbLilitZ9EBE1iCcL1xLy5YafOlsAVw4zd5jueKmFbB9+P0uuuKi0my4tQWNvS3TZNb9VOIVNqkTqNMLmtI8m+ZZkmTvztNympdpVuXAIMeGAkomcOt8pHt20yPRL3XYbetxYzWXy2F9M3S5G0GlK88qTSLCniyTFUM+NQjDItKArMAqvd0jmkF1K8UBWHFpsR3xm58M/44XZpOJ31gzlEhZKO6XxeBegOsrsIBUHLVoW8DoSnHKTDCnYjU4YefHWNhw23qp4YiFUoynlXCN/BgcIfsG42Mh4gySYK1X6qkPOuq7ldp8GlkuuOxdGYpCURD7FVj0rnTW8+kIE6zBRkUDbYuOFq1Wa94fRi5NvBS4iGuhNnipn8IYqCceo7EQLxC/6uEH0Nyr+IBt8HCgWYLhtOgnFtuhTYzsImK2Zi7AmINIdLf45jzFIHkQVwR//BGqeWsv8eY1G3TsoucBOJr9rus5rwdaMT9MeWEcxccwtRPpbvfFJUle9S2fZ+Mfu7wsOxcwqSdpMjmdnfPpqeycSM0LA5P9ITD+tf4yL0mS/A/MqwPDTRHGfNAWhunt8vLowxHu3HtNuUFq9x67Hv8rvrDF4eL0GNoo/dWLOmC7H4YPds+hBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ca9b7d2583d312101b49bfc6feaad3a2</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="amount integration">9029fd6183d312101b49bfc6feaad331</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Do the following until">eaeb040687210300e6c2c88fc0e3ec89</logic_definition>
+        <order>5</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:37:42</sys_created_on>
+        <sys_id>859c3e29831b12101b49bfc6feaad355</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:29</sys_updated_on>
+        <ui_id>9a26d1d1-4899-4717-bd28-51226f201b89</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0PPxjjx0pS+lZTCoGvZWvqyteZGkhMxWfL0kdQz/u+7shUnpC1b2WAvy5N1dD/OPbqHtER7V3tn7/S5tWKlyNmXh4QIFTD8bomCipMzQrViwgmtih5IyAakDxf4yYStJTT3e4SuhWSGx2o1GMxx3JCz9uhKMExYMpjSZfZ+nmf5JM+yk8mUTud5ib8TmM8yLChhySWGLnY03l31SPIqP9fUAbfOCLWK56tY5XYHasMCq0mWJYQ/Oa4YR0IlSMsTUoFi4LRpRsRwYDdK7oG1UG6YuIInK35gx+lsFgJLjjPSKMd4LKJUA1xegAPk4qnzZlROC8rtoA7jJXjpFofYEHBTh1mHFAdLucvW0lfqepCEjAUOXsZbJMHrMGmgHucob9d6+3nH8lKoXpZ4KTUFOZ7AoXhL7wKflnDJKyxUVFDXKGlRG70RfTJyqdKVxENaSr3FpmG9UqCBeIrCQnqJ+EUP34MRYYqPWAaTu4TYxi4kWLufBUUsvvvAZJgszlAMMoQUakTtzrHBhke6XfJ8gQ92t217apvYPcXX5CsD/RpZT1FzW3o56bqvPstyhi/FH68/HWcZ7kxTUO2Vi5F0iD8OpN6YwBjDu+65b/4xm7d5ls0n+Wn5mmdP6UuefcGtbzTq9FdGDaL8pk+zUOu/Uf/IqLgMthh8F2frm/9FAz8Etw49R62psEjtLmAfdn9U4aLB7RL0ENpq8y0Mtce6n8bJRe7yBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e805faed83d712101b49bfc6feaad3ea</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="amount integration">9029fd6183d312101b49bfc6feaad331</flow>
+        <flow_variables_assigned>current_try</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>9</order>
+        <outputs_assigned/>
+        <parent_ui_id>effd183c-03af-4f9e-9035-469eb5258ad1</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:37:42</sys_created_on>
+        <sys_id>899c3e29831b12101b49bfc6feaad357</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:29</sys_updated_on>
+        <ui_id>2e0b4467-a6d3-4988-bb38-aff190715d96</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy47aMBT9FeRtIQLC8NqNGI2E1HakDp1NNYpubAesOnbGDxiK8u+9jhNA06rbbtjFx/dxzrm+yolo7yrv7EbfWyu2iix/vPaJUAHD7xMRjCwJ6RMFJccv6o3hymXOHBHcg/Q83jNhKwnHlwtCd0IyDI4lKzBYwXFDlqcPV00Lyhf5jI3v5ilLR+PRcJRPFnlBpwUHYOkcsKCEnEsMXUUOvU3D4a/E3LEKoFCOb7FlBD63+eszqg0LhIZ9wt8dV4wjkwKk5X1SgmLgNFbrEMOBPSl5AXZYPkot4d2KX9hxMgxxBUcqtLXhfMxaiyJcPICDZ2c8dd6cHdOCchtdYbwAL93qGosBT5UTWsUUB7nssrX0pfoa7SDnAlcT8RZJ8CoIDcxbGcXzTh++dSwfhWo8aS+lpiDPJ3DOiNy7wOdEvNh8tDlCfxrNJS/DdEqoKqG2WWX0XjR9kHaZbCUekkLqA/ILzzABGjQmOAJIHhF/aOAXMCII/oJl2n7flXjzfB2eEEzG4xEMp4PxlC0Gk8k8HczneTFIKeQ5W8xm6fCO1H1ij3YlwdqLVTij7M0HodG41qIsuhxSqBGVu0dSe0zBqfEOa57z1dvD47+CsRXOW/UKljXaGs17MMlVjd6n3ojUdf0aFiwKvu3ibRdvu/h/d5FxKiwasQmq190fMlwc8d0Leg0dtPkZyl2w+jfkPsBDawcAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">1f19bd6183d312101b49bfc6feaad392</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="amount integration">9029fd6183d312101b49bfc6feaad331</flow>
+        <flow_variables_assigned>active,retry_count,retry_timeout,integration_successful1,current_try,amount_brl,amount_usd</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:43:01</sys_created_on>
+        <sys_id>ac29fd6183d312101b49bfc6feaad384</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:29</sys_updated_on>
+        <ui_id>d1ce6f05-4ae4-4568-a58c-871fefdefc62</ui_id>
+        <values>H4sIAAAAAAAA/+2abW/bNhDHv4qhVxtgetSzlL3qEgQI0K1D4vbNWgjHBznEZMnVQ1I3yHffUZJtJXaMBYiDtOY76UTy/ry7X0gfcmcVTb1o6mpavKsqNcutk3++jC2Vaxs+31lKWCeWNbZymEt8Al6rG4nvN5A12kDxWahqkcHyU29KIav0EH6tMlHKfs0FlLhELUvr5O7Rp9ZH5NoxE4EducK1HZvazItZyoNUAgg3cnHBDJjMcOi7lYjHourlQr+zosgk5L3hfT9rWjbyt/NeW1EKrYSOLfmtlrmQKKHVPbbmkAuoi3K5tpQSxIc82xiuVV53YZnDt0p9R6ce1eNSiZvisvu2fk36AHXm9AxquKrLhtdN2Q/l14XisurCIWQKTVafDm3dgA+LWhV5N6UGlq1mF1kzz//qgmGtF3icj958tjtbTYU65ULHQm+u32l6dV3cXq42cq7yNmz9x6zgkK3foK5LxZpaS76zGjV9nIzOtDMdMpNzdJvMYbFQ+SxZlMWNal3h5uaTWYYvkzQrblGiLtOJTnmRTzBRMDlH+1lr/gSl0mH5E5fBydrlx1x9beSFrjAZO77npAERnAniMRcIg5QTYDZnEQfq+K51P7aqZXWaQVVtAoqZTL42eq9dePsoJV0u9BReqkXd1+UJ5laubDoWfX3i075x6AULIh/NqslM1n+XBW6hXv7y2fqW2H7geU6QlFLNWZPQCdafnJWgY5B0q3+2xqM2Eb/+bt3f34+3yMXVy2XCiwazu8F3m95ng8vDveDGA3AvtYbRaa9hp7Ae4XaDbQqHCF+srcfE7wHh3IT5IZybQL8KmTbEMUhJCY3ckHiBECSyU58EXgS2kEzGmN9DkDmsvQPhOXChGXX381mrucQj+YUJZXsJ5VuETtcqnhBnKD1CSv2Q+wHYAWERjYnnRz6JHeERSVNfRhHjUQgHpHRVfQfltHeiSQ3oU6gOp1UNx/Kp0iazD3Er5kHMQuH4T6AbDNC92KgaXa1V/R/V5tpsrs1PYw+US0ppgEdylBIv5j5hrieI67hcRsBYGLIXwb4NyA7ceFOWehryOUDM3kbMfj5eci9eMMDrtFMxmrYqdkozp+IRnorgOY4NiIcTCDwVvcgleBamxOWIhojD0KX+QfGAub5bJqzMBnT8cfl+m4/O+DxCbO7aSEOMhITbhNAHbZlWyKjzsktcz0eF6cxnj/C4WhlfnI4I/3gdIx/rMD/EYx3oV6EjEnZIY5sTsHlEPDeOCKRxQGIIbErTMJa+fA06mkoM6Ph4dbZNR2d8Jh10Lx3hNh2dl13iDB1HR4crEAGRchJzF69WLEgJeIgIg4g7ngiC0E1fkI4vmoBOj2nu/yQXLPMrxTT3TXP/x+X35/+BZJr7prlvKH3rlJrmvmnuHxHQ5tpsmvuWae6bU9E0901z/wfk4020L01z3zT3DR1vp7kvJFcV6pxqURer/+HXH5ZYk4oPTbdF+a/e4cZ2/x9DBZJ1DTAAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ca9b7d2583d312101b49bfc6feaad39f</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="amount integration">9029fd6183d312101b49bfc6feaad331</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:37:42</sys_created_on>
+        <sys_id>c19c3e29831b12101b49bfc6feaad353</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:29</sys_updated_on>
+        <ui_id>5d5d7571-6c3c-4a93-b3c1-176cea4f84f3</ui_id>
+        <values>H4sIAAAAAAAA/+1VXWvbMBT9K0HPxvijCWteRkkpBLoV1tKXrZhrWU7EZMmT5KSZyX/flSUnYc1oy/a4t+jcr3Ou7yE9UZ1tO2se1JUxfCXJ/OtTRLh0GP7uiYSGkTmhSlbcciWLAYjIBkTnAktp2UqDC024mSwlUMs37COmVNy0AnaPr2fSNReVZmF6CxpnWKbJvP8txCtsVCdQp5c0pXk2y7MkyT5cpOUsL9OsyoFBjg0FlExg6mKkPbkdkOiPeuyudbixmstVeN+GLvcjqHTlWKVJRNizZbJiyKcGYVhEGpAVWKV3B0QzqO6kOAJrLi22Iy752fCfODCbTl1izVAiZT54eBZhgx6ur8ECUumo7XRIpWvFKTN+ORWroRN2cYr5hLvWSfUlFkoxVivRNfKz3wg5NBg/GCKdQRKsdUod9aCjvl+r7ZeR5Q2Xw1ZCUCgK4vACi7srO+v49IQJ1mCjooG2xY0WrVYbPhQjlyZeCXzEtVBbHOquMXYnomSMi4X4BvHrAX4EzZ2KT9gGiz3NEgynxXC52A7XxMg+ImZnFgKMOYrE7RY/OkfRSw7iCr8fV0I1b+3VcJxBxz56aYQTD/T9wHkTaMX+sPf7b12S5NXQ4aUd3lb0PmdcwrSepsn0vDMuZuecccYT77RD9ood3Ld4oxuSJPlvh7+2AzeFP+KgzR/Tv3PDkzt9P/Owa8oNUntw2HL893CBHR4Xp6fQVunvTtQR2/8Ck/Z1Z4cGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">ce9b7d2583d312101b49bfc6feaad3a0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="amount integration">9029fd6183d312101b49bfc6feaad331</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id>5d5d7571-6c3c-4a93-b3c1-176cea4f84f3</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:37:42</sys_created_on>
+        <sys_id>c59c3e29831b12101b49bfc6feaad354</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:29</sys_updated_on>
+        <ui_id>08d8797f-dd02-4d8e-ba52-bd8f8b2bcfba</ui_id>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e405faed83d712101b49bfc6feaad3e9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="amount integration">9029fd6183d312101b49bfc6feaad331</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>8</order>
+        <outputs_assigned/>
+        <parent_ui_id>9a26d1d1-4899-4717-bd28-51226f201b89</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:37:42</sys_created_on>
+        <sys_id>c99c3e29831b12101b49bfc6feaad356</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:29</sys_updated_on>
+        <ui_id>effd183c-03af-4f9e-9035-469eb5258ad1</ui_id>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8lZRnWZAty3F8KQIHBgKkDdAEubQBsSIpmyhNqiTlxDX8712K8gON+wiaY2/m7HJ3ZsSBN8Q0vm68uzeXzsm5JpPPjwmROmD4e0M0LAWZEGY0l14aTVsgIStQTShcay/mFkLpbAZSNVa8xzKXrlawfvh9F1tIxa3ottZgcbYXlkw2P5UkxyFVBlX/gvVZPhjlgywbjIf9cpSX/QHPQUCOAxWUQmHrdEf37KZFkl/q8Os64M5bqefd+aabcrcDjeWBVT9LiHj2QnOBfCpQTiRkCZqDN3a9R6wAfqvVAVhI7XEcCc3PTn7HhYOiCI2VQIlMxOL+SDv3IlxdgQek0jCPtkWMLYxkwkVzuKigUX56jMWG2zpIjVc8lGp326hmqT9GR8h+wO5jIdI4JCHqoDRQ73RUdwvz9GnHciZ160pXVIaB2p/Ao3dl4wOfDRFKLHEQXUJdo6O0tmYl28vIZZnOFR7SSpknXBpeYQosEE/RWEhniF+18ANYGVR8wDF4OdIswUlG2xeL49AmQbYJcWs3VeDcQSS6S781gWKU3Imj0Z9whVlZ+0vcvBKdjm3yMgBHb3+zyYvxKGMl740qgN6wKvPe+LwY94bjosxLfp6LiqeURjnUefCNozRlhovt9t2XJstynr2My9sNfl3CLqCoin5WnE7YcHQqYSey9cpYDf4Qq/BN/zJVWZb9j9U/x0o6GsPQaWuXv2GqHkOE4s6910w6pHYfsOvdv08orPFxSXYMPRn7NYg6YNsfBaXKQ8cGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">810f762d831b12101b49bfc6feaad352</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="amount integration">9029fd6183d312101b49bfc6feaad331</flow>
+        <flow_variables_assigned>integration_successful1</flow_variables_assigned>
+        <generation_source/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <parent_ui_id>9a26d1d1-4899-4717-bd28-51226f201b89</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:48:28</sys_created_on>
+        <sys_id>fa0ff62d831b12101b49bfc6feaad313</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:48:29</sys_updated_on>
+        <ui_id>b1822a31-1ad9-4002-95a2-17c72f45935f</ui_id>
+        <values>H4sIAAAAAAAA/+1VTW8aMRD9K5XPC11YwtctCkJCahup0FyiaDXrD7DqtTf+gFDEf++YNZBGPfTUE6e134xn3ntjaw/EBN8E71bm3jm51mT6/JIRqSOG6wORjEwJyYiGmuNKas/XFrw0unSBUu6cCKqHCVtQIWbENZOuUbB/SpC3+MkI3UjFLE89GrBY0nNLpocPoVNPOpxUI9a/Gxes6PV7ea8aTCpBh4IDsGI8xIIKKq4wdXEl9Wl5IfUvpP2+iQmVMYqDTsCXVHaFtD/PQblI3lgWqeYZ4W+ea8aRo4ixjNSgGXhj9xfEcmCPWl2BDVJofazhzclf2HSQxzzBUTXlbeyyLZOBLSxm4GGJJlIfbEqlGyNRR+sX4wKC8g/vsTbhsYmi2yMeKnU+bVSo9bfWHXIpcJ6XSJoTPPtzmudocMiTN9GLKC4pFcuN2X0/C5lLfbItBZWhoC478N7KKvhI+UCCXH0cRgv9dRxc8RrbljU0jdTrsrFmK0+tUFzdXSvcdIUyO6QY73UXaHSii4OC7hzx2Ql+AiujLV+xDB6OLX9o+Rr4Il5ByCnP83zYGffGojOY0LtOVQxYp+gXlI+hqkajihwz4vbuQYFzV0NxkuVriFpbe5NLZTuLeIRa2fh7JLXlyZDjS3xELZ/b27u9vdvb+79vj3EqHfJcRVKL8x8wBvZ4lyV9D+2M/RkVXrHjb9i/JNVLBwAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9029fd6183d312101b49bfc6feaad331"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9029fd6183d312101b49bfc6feaad331^sys_idNOT IN019c3e29831b12101b49bfc6feaad32b,2029fd6183d312101b49bfc6feaad378,2029fd6183d312101b49bfc6feaad37f,2c29fd6183d312101b49bfc6feaad37b,499c3e29831b12101b49bfc6feaad32f,c99c3e29831b12101b49bfc6feaad333,c99c3e29831b12101b49bfc6feaad338"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=3d0f7dfc-9c3f-4b6f-a498-ba8c24d6673f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>amount_usd</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Amount USD</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="amount integration">9029fd6183d312101b49bfc6feaad331</model>
+        <model_id>9029fd6183d312101b49bfc6feaad331</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_9029fd6183d312101b49bfc6feaad331</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:37:41</sys_created_on>
+        <sys_id>019c3e29831b12101b49bfc6feaad32b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:37:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=e92542f6-dcbd-4b3a-bafc-ab1cb8ca0253</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>active</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Active</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="amount integration">9029fd6183d312101b49bfc6feaad331</model>
+        <model_id>9029fd6183d312101b49bfc6feaad331</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_9029fd6183d312101b49bfc6feaad331</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:43:01</sys_created_on>
+        <sys_id>2029fd6183d312101b49bfc6feaad378</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:43:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=57c56a16-b809-4585-92d4-e0f5e88bc87a</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_timeout</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry Timeout</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="amount integration">9029fd6183d312101b49bfc6feaad331</model>
+        <model_id>9029fd6183d312101b49bfc6feaad331</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_9029fd6183d312101b49bfc6feaad331</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:43:01</sys_created_on>
+        <sys_id>2029fd6183d312101b49bfc6feaad37f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:43:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=1a99aee0-0837-46dd-81f5-648a1debe9ed</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>retry_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Retry Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="amount integration">9029fd6183d312101b49bfc6feaad331</model>
+        <model_id>9029fd6183d312101b49bfc6feaad331</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_9029fd6183d312101b49bfc6feaad331</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:43:01</sys_created_on>
+        <sys_id>2c29fd6183d312101b49bfc6feaad37b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:43:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=8d17091c-a1c8-4398-af96-9a6100f79e5e</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>amount_brl</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Amount BRL</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="amount integration">9029fd6183d312101b49bfc6feaad331</model>
+        <model_id>9029fd6183d312101b49bfc6feaad331</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_9029fd6183d312101b49bfc6feaad331</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:37:42</sys_created_on>
+        <sys_id>499c3e29831b12101b49bfc6feaad32f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:37:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=a0ce0006-818f-49c5-b34d-323ce8abb77b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>integration_successful1</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Integration Successful</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="amount integration">9029fd6183d312101b49bfc6feaad331</model>
+        <model_id>9029fd6183d312101b49bfc6feaad331</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_9029fd6183d312101b49bfc6feaad331</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:37:42</sys_created_on>
+        <sys_id>c99c3e29831b12101b49bfc6feaad333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:37:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=a4221a06-26d9-4483-88bf-3cabbd977305</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current_try</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Current Try</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="amount integration">9029fd6183d312101b49bfc6feaad331</model>
+        <model_id>9029fd6183d312101b49bfc6feaad331</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_9029fd6183d312101b49bfc6feaad331</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 19:37:42</sys_created_on>
+        <sys_id>c99c3e29831b12101b49bfc6feaad338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 19:37:42</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9029fd6183d312101b49bfc6feaad331^sys_idNOT IN2029fd6183d312101b49bfc6feaad369,6029fd6183d312101b49bfc6feaad362"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9029fd6183d312101b49bfc6feaad331</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:43:01</sys_created_on>
+        <sys_id>2029fd6183d312101b49bfc6feaad369</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Reimbursement - Hygor Oliveira" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:43:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_9029fd6183d312101b49bfc6feaad331</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:43:01</sys_created_on>
+        <sys_id>6029fd6183d312101b49bfc6feaad362</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Reimbursement - Hygor Oliveira" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:43:01</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9029fd6183d312101b49bfc6feaad331"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_9029fd6183d312101b49bfc6feaad331"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9029fd6183d312101b49bfc6feaad331"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>766f6565839312101b49bfc6feaad399</sys_id>
+        <latest_snapshot>9029fd6183d312101b49bfc6feaad331</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=766f6565839312101b49bfc6feaad399^sys_idNOT IN7029fd6183d312101b49bfc6feaad39d"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>766f6565839312101b49bfc6feaad399</plan_id>
+        <snapshot>9029fd6183d312101b49bfc6feaad331</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-24 14:43:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7029fd6183d312101b49bfc6feaad39d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-24 14:43:02</sys_updated_on>
+        <trigger display_value="">fc29fd6183d312101b49bfc6feaad39a</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=766f6565839312101b49bfc6feaad399"/>
+</record_update>
