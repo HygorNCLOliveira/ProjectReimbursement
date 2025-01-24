@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
     <sysevent_email_action action="INSERT_OR_UPDATE">
-        <action_insert>false</action_insert>
+        <action_insert>true</action_insert>
         <action_update>false</action_update>
         <active>true</active>
         <advanced_condition/>
         <affected_field_on_event/>
         <category display_value="Reimbursement" name="Reimbursement">b5d22ed0839792101b49bfc6feaad32c</category>
-        <collection>x_1564426_reimbu_0_reimbursement</collection>
-        <condition/>
+        <collection>sys_user_grmember</collection>
+        <condition table="sys_user_grmember">user.roles=x_1564426_reimbu_0.resolver^EQ<item endquery="false" field="user.roles" goto="false" newquery="false" operator="=" or="false" value="x_1564426_reimbu_0.resolver"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
         <content_type>text/html</content_type>
         <default_interval/>
         <description/>
@@ -28,60 +30,59 @@
         <event_parm_2>false</event_parm_2>
         <exclude_delegates>false</exclude_delegates>
         <force_delivery>false</force_delivery>
-        <from>Reimbursement@Aoop.com.br</from>
-        <generation_type>triggered</generation_type>
+        <from/>
+        <generation_type>engine</generation_type>
         <importance/>
         <include_attachments>false</include_attachments>
         <item>event.parm1</item>
         <item_table/>
         <mandatory>false</mandatory>
         <message/>
-        <message_html><![CDATA[<div id="KnM9nf" data-entityname="Google Translate" data-attrid="tw-sourceArea">
-<div id="tw-smenu"><span id="tw-mic" tabindex="0" role="button" data-ved="2ahUKEwj2ge7FqISLAxWBr5UCHRq-BdYQ7zR6BAgKEBA" aria-label="Tradu&ccedil;&atilde;o por voz">Hi, ${sys_created_by}</span></div>
-</div>
-<div>
-<div id="tw-target">
-<div id="kAz1tf" data-entityname="Google Translate" data-attrid="tw-targetArea">
-<div id="tw-target-text-container" tabindex="0" role="text">
-<pre id="tw-target-text" dir="ltr" aria-label="Texto traduzido: We are sorry but your refund request was declined" data-ved="2ahUKEwj2ge7FqISLAxWBr5UCHRq-BdYQ3ewLegQIChAU" data-placeholder="Tradu&ccedil;&atilde;o">We are sorry but your refund request was <strong>declined<br><br></strong>Reason:<strong> ${rejection_reason}<br></strong>BY:<strong> ${approval}</strong></pre>
-<pre id="tw-target-text" dir="ltr" aria-label="Texto traduzido: Your refund request was rejected" data-ved="2ahUKEwj2ge7FqISLAxWBr5UCHRq-BdYQ3ewLegQIChAU" data-placeholder="Tradu&ccedil;&atilde;o"></pre>
-</div>
-</div>
-</div>
-</div>]]></message_html>
+        <message_html><![CDATA[<p><br>Member: ${name} has been added to the resolver group!</p>]]></message_html>
         <message_list/>
         <message_text/>
-        <name> Refund rejected</name>
+        <name>New Member</name>
         <omit_watermark>false</omit_watermark>
         <order>100</order>
         <push_message_only>false</push_message_only>
-        <recipient_fields>sys_created_by</recipient_fields>
+        <recipient_fields>group.manager</recipient_fields>
         <recipient_groups/>
         <recipient_users/>
-        <reply_to>Reimbursement@Aoop.com.br</reply_to>
+        <reply_to/>
         <send_self>true</send_self>
         <sms_alternate/>
         <style/>
-        <subject>${number} - Request refused!</subject>
+        <subject>A new member has been added to the resolver group!</subject>
         <subscribable>false</subscribable>
         <sys_class_name>sysevent_email_action</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-01-20 20:38:56</sys_created_on>
+        <sys_created_on>2025-01-23 14:50:52</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>667266d0839792101b49bfc6feaad36d</sys_id>
-        <sys_mod_count>3</sys_mod_count>
-        <sys_name> Refund rejected</sys_name>
+        <sys_id>b910f411839b96101b49bfc6feaad328</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>New Member</sys_name>
         <sys_overrides/>
         <sys_package display_value="Reimbursement - Hygor Oliveira" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package>
         <sys_policy/>
         <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
-        <sys_update_name>sysevent_email_action_667266d0839792101b49bfc6feaad36d</sys_update_name>
+        <sys_update_name>sysevent_email_action_b910f411839b96101b49bfc6feaad328</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-23 14:40:26</sys_updated_on>
+        <sys_updated_on>2025-01-23 17:45:04</sys_updated_on>
         <sys_version>2</sys_version>
         <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
         <type>email</type>
         <weight>0</weight>
     </sysevent_email_action>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>b910f411839b96101b49bfc6feaad328</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 14:57:30</sys_created_on>
+        <sys_id>bad2bcdd835b96101b49bfc6feaad3dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 14:57:30</sys_updated_on>
+        <table>sysevent_email_action</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
 </record_update>

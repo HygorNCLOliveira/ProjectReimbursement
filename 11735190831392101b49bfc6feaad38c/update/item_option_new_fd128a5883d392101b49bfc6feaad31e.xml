@@ -21,7 +21,7 @@
         <dynamic_value_dot_walk_path/>
         <dynamic_value_field/>
         <enable_also_request_for>false</enable_also_request_for>
-        <example_text>9.50</example_text>
+        <example_text>Put round values ​​ex: 99.98 =&gt; 100</example_text>
         <field>amount_brl</field>
         <global>false</global>
         <help_tag>More information</help_tag>
@@ -79,16 +79,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-01-20 18:13:57</sys_created_on>
         <sys_id>fd128a5883d392101b49bfc6feaad31e</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>What is the amount spent?</sys_name>
-        <sys_package display_value="Reimbursement" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package>
+        <sys_package display_value="Reimbursement - Hygor Oliveira" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Reimbursement">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
         <sys_update_name>item_option_new_fd128a5883d392101b49bfc6feaad31e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-01-20 18:37:33</sys_updated_on>
+        <sys_updated_on>2025-01-23 20:09:33</sys_updated_on>
         <table/>
-        <tooltip>Use the "." in the values</tooltip>
+        <tooltip> Always round up</tooltip>
         <topic_block/>
         <type>6</type>
         <ui_page/>

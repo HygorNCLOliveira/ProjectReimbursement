@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>expense_date</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>validation date</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || !newValue) {
+        return;
+    }
+
+    try {
+        // Obtém a data atual e remove as horas para comparar apenas a data
+        var currentDate = new Date();
+        currentDate.setHours(0, 0, 0, 0);
+
+        // Converte o valor do campo (newValue) em um objeto Date
+        var inputDate = new Date(newValue);
+
+        // Verifica se o valor inserido é inválido
+        if (isNaN(inputDate)) {
+            g_form.showFieldMsg(control, 'A data inserida não é válida.', 'error');
+            g_form.setValue(control, '');
+            return;
+        }
+
+        // Compara as datas: inputDate não pode ser maior que currentDate
+        if (inputDate > currentDate) {
+            g_form.showFieldMsg(control, 'A data não pode ser maior que a data atual.', 'error');
+            g_form.setValue(control, '');
+        } else {
+            g_form.hideFieldMsg(control); // Remove mensagens de erro, caso existam
+        }
+    } catch (e) {
+        // Exibe erros inesperados no console
+		g_form.showFieldMsg('Erro ao validar a data:', e);
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 17:16:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>36325199831f96101b49bfc6feaad3c5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>validation date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Reimbursement - Hygor Oliveira" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_update_name>sys_script_client_36325199831f96101b49bfc6feaad3c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 17:25:23</sys_updated_on>
+        <table>x_1564426_reimbu_0_reimbursement</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</application>
+        <file_path/>
+        <instance_id>6b366160fb82d6d01feef633beefdce8</instance_id>
+        <instance_name>dev290447</instance_name>
+        <name>sys_script_client_36325199831f96101b49bfc6feaad3c5</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;expense_date&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;validation date&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || !newValue) {
+        return;
+    }
+
+    try {
+        // Obtém a data atual e remove as horas para comparar apenas a data
+        var currentDate = new Date();
+        currentDate.setHours(0, 0, 0, 0);
+
+        // Converte o valor do campo (newValue) em um objeto Date
+        var inputDate = new Date(newValue);
+
+        // Verifica se o valor inserido é inválido
+        if (isNaN(inputDate)) {
+            g_form.showFieldMsg(control, 'A data inserida não é válida.', 'error');
+            g_form.setValue(control, '');
+            return;
+        }
+
+        // Compara as datas: inputDate não pode ser maior que currentDate
+        if (inputDate &gt; currentDate) {
+            g_form.showFieldMsg(control, 'A data não pode ser maior que a data atual.', 'error');
+            g_form.setValue(control, '');
+        } else {
+            g_form.hideFieldMsg(control); // Remove mensagens de erro, caso existam
+        }
+    } catch (e) {
+        // Exibe erros inesperados no console
+		g_form.showFieldMsg('Erro ao validar a data:', e);
+    }
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-01-23 17:16:29&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;36325199831f96101b49bfc6feaad3c5&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;validation date&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Reimbursement - Hygor Oliveira" source="x_1564426_reimbu_0"&gt;11735190831392101b49bfc6feaad38c&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Reimbursement - Hygor Oliveira"&gt;11735190831392101b49bfc6feaad38c&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_36325199831f96101b49bfc6feaad3c5&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-01-23 17:25:23&lt;/sys_updated_on&gt;&lt;table&gt;x_1564426_reimbu_0_reimbursement&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1575824276</payload_hash>
+        <record_name>validation date</record_name>
+        <reverted_from/>
+        <source>2f482598835392101b49bfc6feaad3e0</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 17:25:23</sys_created_on>
+        <sys_id>81b4915d831f96101b49bfc6feaad3f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1949432786b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 17:25:23</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>09b4915d591f9610eaa1b69b3013e8f2</update_guid>
+        <update_guid_history>09b4915d591f9610eaa1b69b3013e8f2:-1575824276,0be3911ddc1f9610e4e09eb57fdb1b46:-951502868,7ea259995b1f9610c473bc94fd3abdbc:-1058019109</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-01-23 17:31:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>154ddd9fe1204971b593dafc4dfca989</sys_id>
+        <sys_metadata>36325199831f96101b49bfc6feaad3c5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>validation date</sys_name>
+        <sys_package display_value="Reimbursement - Hygor Oliveira" source="x_1564426_reimbu_0">11735190831392101b49bfc6feaad38c</sys_package>
+        <sys_parent display_value="Reimbursement">576e6950839392101b49bfc6feaad311</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Reimbursement - Hygor Oliveira">11735190831392101b49bfc6feaad38c</sys_scope>
+        <sys_scope_delete display_value="">0d09655868c24840ac0ecd0f56928400</sys_scope_delete>
+        <sys_update_name>sys_script_client_36325199831f96101b49bfc6feaad3c5</sys_update_name>
+        <sys_update_version display_value="sys_script_client_36325199831f96101b49bfc6feaad3c5">81b4915d831f96101b49bfc6feaad3f3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-01-23 17:31:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
